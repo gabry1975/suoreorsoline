@@ -4,7 +4,7 @@
 $ErrorActionPreference = "Stop"
 $hostAlias = "suoreorsoline"
 $wp = "www/mindlyc38.sg-host.com/public_html/wp-content"
-$themeSlug = ""
+$themeSlug = "hello-elementor-child"
 $map = @{ "mu-plugins" = "$wp/mu-plugins" }
 if ($themeSlug) { $map["theme"] = "$wp/themes/$themeSlug" }
 foreach ($local in $map.Keys) {

@@ -14,6 +14,10 @@
 .elementor .elementor-widget.o-mappa-home{position:absolute!important;inset:0!important;z-index:0;background:#dcedf6}
 .elementor .o-mappa-home .elementor-custom-embed,.elementor .o-mappa-home iframe{height:100%!important;width:100%!important;display:block;border:0;margin:0}
 .elementor .elementor-widget.o-mappa-home ~ .e-con{z-index:1!important}
+/* Bottoni bordeaux con passaggio del mouse rosa antico (classe hv-wine: "Richiesta Informazioni", "Invia", ecc.):
+   sfondo bordeaux più rosato (richiesta del 2026-11-18). Al passaggio del mouse restano #C18A8A (style.css). */
+.hv-wine:not(.elementor-widget),.elementor .e-con.hv-wine,.elementor .hv-wine .elementor-button{background:#b04a5a!important}
+
 /* Ancora #regolamento (Home): lascia spazio all'header fisso quando ci si arriva dal menu. */
 #regolamento{scroll-margin-top:110px}
 

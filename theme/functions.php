@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORSOLINE_VERSION', '2.5.0');
+define('ORSOLINE_VERSION', '2.5.1');
 
 require_once __DIR__ . '/inc/data.php';
 require_once __DIR__ . '/inc/contact-form.php';
@@ -73,8 +73,8 @@ add_filter('template_include', function ($template) {
 /**
  * Note UX del mockup: spente sul sito (richiesta del 2026-11-18). Per riattivarle:
  * add_filter('orsoline_show_ux_notes', '__return_true');
- * Badge "Contenuto nuovo": visibili come nel mockup; per nasconderli:
- * add_filter('orsoline_show_new_badges', '__return_false');
+ * Badge "Contenuto nuovo": spenti su richiesta (2026-11-18); per riattivarli nei template PHP:
+ * add_filter('orsoline_show_new_badges', '__return_true');
  */
 function orsoline_show_notes()
 {
@@ -92,7 +92,7 @@ function orsoline_show_cookie_banner()
 
 function orsoline_show_badges()
 {
-    return (bool) apply_filters('orsoline_show_new_badges', true);
+    return (bool) apply_filters('orsoline_show_new_badges', false);
 }
 
 /** URL di una pagina del sito a partire dallo slug (gli slug sono quelli del sito online). */

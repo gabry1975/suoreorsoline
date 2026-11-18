@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORSOLINE_VERSION', '2.0.0');
+define('ORSOLINE_VERSION', '2.1.0');
 
 require_once __DIR__ . '/inc/data.php';
 require_once __DIR__ . '/inc/contact-form.php';
@@ -27,6 +27,8 @@ add_action('wp_enqueue_scripts', function () {
     // Stile dei blocchi Elementor (generato da tools/elementor/genera.py): dopo il CSS di Elementor.
     $deps = wp_style_is('elementor-frontend', 'registered') ? ['orsoline-responsive', 'elementor-frontend'] : ['orsoline-responsive'];
     wp_enqueue_style('orsoline-elementor', $uri . '/assets/css/elementor.css', $deps, ORSOLINE_VERSION);
+    // Regole scritte a mano per i blocchi Elementor.
+    wp_enqueue_style('orsoline-custom', $uri . '/assets/css/custom.css', ['orsoline-elementor'], ORSOLINE_VERSION);
     wp_enqueue_script('orsoline', $uri . '/assets/js/main.js', [], ORSOLINE_VERSION, true);
 }, 20);
 

@@ -1,0 +1,10 @@
+/*
+ * Regole scritte a mano per i blocchi Elementor (elementor.css è generato e non va modificato).
+ * Si carica dopo elementor.css.
+ */
+
+/* Home: griglia dei riquadri numerati a 4 colonne (da 2026-11-18: aggiunto "02 · luoghi di culto").
+   Su mobile resta a una colonna (regola di elementor.css). */
+@media (min-width:901px){
+  .elementor .e-con.o-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+}

@@ -17,7 +17,7 @@ get_header();
           <h1 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(48px,6.4vw,96px);line-height:.95;letter-spacing:-.04em;margin:0 0 24px;text-wrap:balance">“Orsoline Missionarie <span style="font-weight:300;color:#f2d4d3">del Sacro Cuore</span>”</h1>
           <p style="font-size:20px;margin:0 0 36px;color:#fbeef1">Convenzionato con l’Università Cattolica del Sacro Cuore.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
-            <a class="lk hv-pink" href="<?php echo esc_url(orsoline_url('chi-siamo')); ?>" style="cursor:pointer;background:#fff;color:#a0244a;padding:16px 28px;border-radius:999px;font-weight:600;white-space:nowrap">Il Collegio →</a>
+            <a class="lk hv-pink" href="<?php echo esc_url(orsoline_url('chi-siamo')); ?>" style="cursor:pointer;background:#fff;color:#a0244a;padding:16px 28px;border-radius:999px;font-weight:600;white-space:nowrap">Chi Siamo →</a>
             <a class="lk hv-wine" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;background:#a0244a;color:#fff;padding:16px 28px;border-radius:999px;font-weight:600;white-space:nowrap">Richiesta Informazioni</a>
           </div>
         </div>

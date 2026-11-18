@@ -49,7 +49,7 @@ get_header();
       <?php endif; ?>
       <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;margin-bottom:72px">
         <?php if ($lead) : ?>
-          <p style="margin:0;font-size:34px;line-height:1.2;letter-spacing:-.02em;font-weight:400;text-wrap:pretty"><?php echo esc_html($lead); ?></p>
+          <p style="margin:0;font-size:18px;line-height:1.55;color:#3a2a31;text-wrap:pretty"><?php echo esc_html($lead); ?></p>
         <?php endif; ?>
         <div style="display:flex;flex-direction:column;gap:18px;font-size:18px;color:#3a2a31">
           <?php foreach ($rest as $p) : ?><p style="margin:0;text-wrap:pretty"><?php echo esc_html($p); ?></p><?php endforeach; ?>

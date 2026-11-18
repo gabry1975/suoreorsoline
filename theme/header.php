@@ -34,6 +34,11 @@ $logo = get_template_directory_uri() . '/assets/img/logo.png';
               <div style="font-weight:600;font-size:16px;line-height:1.25"><?php echo esc_html($s['title']); ?></div>
             </a>
             <?php endforeach; ?>
+            <?php /* Regolamento: rimanda alla sezione della Home con la scheda e il download del PDF. */ ?>
+            <a class="lk hv-pink" href="<?php echo esc_url(orsoline_url() . '#regolamento'); ?>" style="cursor:pointer;display:flex;align-items:center;gap:14px;padding:10px;border-radius:18px">
+              <div style="width:52px;height:52px;border-radius:14px;flex:none;background:#a0244a;color:#fff;display:grid;place-items:center;font:500 11px 'Geist Mono',monospace">PDF</div>
+              <div style="font-weight:600;font-size:16px;line-height:1.25">Regolamento</div>
+            </a>
           </div>
         </div>
       </div>

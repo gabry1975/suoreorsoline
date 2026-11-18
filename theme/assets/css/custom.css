@@ -14,8 +14,12 @@
 .elementor .elementor-widget.o-mappa-home{position:absolute!important;inset:0!important;z-index:0;background:#dcedf6}
 .elementor .o-mappa-home .elementor-custom-embed,.elementor .o-mappa-home iframe{height:100%!important;width:100%!important;display:block;border:0;margin:0}
 .elementor .elementor-widget.o-mappa-home ~ .e-con{z-index:1!important}
-/* Pagine del Collegio: testo di apertura (colonna sinistra) senza grassetto (richiesta del 2026-11-18). */
-.elementor .elementor-widget.o-56942f{font-weight:400!important}
+/* Ancora #regolamento (Home): lascia spazio all'header fisso quando ci si arriva dal menu. */
+#regolamento{scroll-margin-top:110px}
+
+/* Pagine del Collegio: testo di apertura (colonna sinistra) uguale al testo della colonna destra
+   (richiesta del 2026-11-18): 18px, peso normale, stesso colore e interlinea. Vale anche su mobile. */
+.elementor .elementor-widget.o-56942f{font-size:18px!important;font-weight:400!important;line-height:1.55!important;letter-spacing:normal!important;color:#3a2a31!important}
 
 /* Home, Servizi in città: nota in corsivo sui tempi sotto il testo introduttivo */
 .elementor .elementor-widget p.o-nota-tempi{margin-top:14px!important;font-size:15px;line-height:1.5}

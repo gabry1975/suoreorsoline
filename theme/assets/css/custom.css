@@ -5,6 +5,11 @@
 
 /* Home: griglia dei riquadri numerati a 4 colonne (da 2026-11-18: aggiunto "02 · luoghi di culto").
    Su mobile resta a una colonna (regola di elementor.css). */
+/* Contatti: mappa Google (widget Google Maps di Elementor) al posto del riquadro "MAPPA",
+   con altezza e angoli del design. Indirizzo e zoom si cambiano dal widget in Elementor. */
+.elementor .elementor-widget.o-mappa{height:260px!important;border-radius:24px!important;overflow:hidden!important;background:#f3e7ea}
+.elementor .o-mappa .elementor-custom-embed,.elementor .o-mappa iframe{height:100%!important;width:100%!important;display:block;border:0;margin:0}
+
 @media (min-width:901px){
   .elementor .e-con.o-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}
 }

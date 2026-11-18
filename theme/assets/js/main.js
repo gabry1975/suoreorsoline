@@ -32,7 +32,38 @@
     if (ok) ok.addEventListener('click', function () {
       cookie.hidden = true;
       store(false, 'orsoline_cookie_ok', '1');
+      placeTop();
     });
+  }
+
+  // Bottone "Torna su": visibile dopo 500px di scorrimento.
+  var top = document.getElementById('orsoline-top');
+  function placeTop() {
+    if (!top) return;
+    // Se il banner cookie occupa l'angolo in basso a destra (mobile), il bottone sale sopra il banner.
+    var off = 0;
+    if (cookie && !cookie.hidden) {
+      var c = cookie.getBoundingClientRect();
+      if (c.right > window.innerWidth - 90) off = Math.round(window.innerHeight - c.top);
+    }
+    top.style.setProperty('--top-offset', off + 'px');
+  }
+  if (top) {
+    var ticking = false;
+    var update = function () {
+      ticking = false;
+      top.classList.toggle('is-visible', (window.pageYOffset || document.documentElement.scrollTop) > 500);
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener('resize', placeTop);
+    top.addEventListener('click', function () {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+    placeTop();
+    update();
   }
 
   // Pannello "Note UX": aperto all'inizio, si chiude con × e si riapre con "NOTE UX".

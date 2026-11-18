@@ -41,3 +41,15 @@ button.lk{font:inherit;color:inherit;background:none;border:0;margin:0;text-alig
 @media (max-width:782px){.admin-bar .site-header{top:46px!important}}
 
 [hidden]{display:none!important}
+
+/* Bottone "Torna su" (tutte le pagine): compare dopo un po' di scorrimento.
+   --top-offset viene alzato da main.js quando il banner cookie è visibile sotto (mobile). */
+.to-top{position:fixed;right:24px;bottom:calc(24px + var(--top-offset,0px));z-index:65;width:52px;height:52px;margin:0;padding:0;
+  border:0;border-radius:50%;background:#a0244a;color:#fff;display:grid;place-items:center;cursor:pointer;
+  box-shadow:0 14px 30px -12px rgba(90,20,45,.55);opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .25s ease,transform .25s ease,visibility .25s ease,background .2s ease,bottom .2s ease;-webkit-tap-highlight-color:transparent}
+.to-top.is-visible{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:#7d1a39}
+.to-top:focus-visible{outline:2px solid #a0244a;outline-offset:3px}
+@media (max-width:900px){.to-top{right:16px;bottom:calc(16px + var(--top-offset,0px));width:48px;height:48px}}
+@media print{.to-top{display:none}}

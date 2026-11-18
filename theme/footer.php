@@ -43,6 +43,10 @@ if ($sec === 'sub') {
 </div>
 <?php endif; ?>
 
+<button type="button" id="orsoline-top" class="to-top" aria-label="Torna su" title="Torna su">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
+
 <?php if (orsoline_show_notes() && $notes) : ?>
 <div id="orsoline-notes" style="position:fixed;right:24px;bottom:24px;z-index:70;width:350px;background:#a0244a;color:#fbeef1;border-radius:24px;box-shadow:0 20px 48px -16px rgba(0,0,0,.4);font-size:13px;line-height:1.55;overflow:hidden">
   <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.1)">

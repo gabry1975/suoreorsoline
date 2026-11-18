@@ -10,6 +10,20 @@
     return null;
   }
 
+  // Menu a hamburger (sotto i 1100px).
+  var header = document.querySelector('.site-header');
+  var toggle = document.querySelector('.nav-toggle');
+  if (header && toggle) {
+    toggle.addEventListener('click', function () {
+      var open = header.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && header.classList.contains('nav-open')) toggle.click();
+    });
+  }
+
   // Banner cookie: visibile finché non si preme "Ok".
   var cookie = document.getElementById('orsoline-cookie');
   if (cookie) {

@@ -18,9 +18,10 @@ $logo = get_template_directory_uri() . '/assets/img/logo.png';
 <div style="font-family:'Funnel Sans',system-ui,sans-serif;color:#2a1a22;background:#fbf8f7;min-height:100vh;font-size:17px;line-height:1.55">
 
 <header class="site-header" style="position:sticky;top:0;z-index:50;padding:16px 32px 0">
-  <div style="max-width:1320px;margin:0 auto;height:76px;background:rgba(255,253,250,.88);backdrop-filter:blur(14px);border:1px solid #efe3e5;border-radius:20px;padding:0 10px 0 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:0 10px 30px -18px rgba(90,20,45,.25)">
+  <div class="hd-in" style="max-width:1320px;margin:0 auto;height:76px;background:rgba(255,253,250,.88);backdrop-filter:blur(14px);border:1px solid #efe3e5;border-radius:20px;padding:0 10px 0 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:0 10px 30px -18px rgba(90,20,45,.25)">
     <a class="lk" href="<?php echo esc_url(orsoline_url()); ?>" style="display:block;flex:none"><img src="<?php echo esc_url($logo); ?>" alt="Collegio Universitario Orsoline Missionarie del Sacro Cuore" style="height:clamp(38px,3.6vw,50px);width:auto;cursor:pointer;display:block;flex:none"></a>
-    <nav style="display:flex;align-items:center;gap:4px;font-size:15px;font-weight:500">
+    <button type="button" class="lk nav-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" style="display:flex;align-items:center;gap:4px;font-size:15px;font-weight:500">
       <a class="lk hv-sky" href="<?php echo esc_url(orsoline_url()); ?>" style="cursor:pointer;padding:10px clamp(10px,1.2vw,18px);white-space:nowrap;border-radius:999px;background:<?php echo $nb('home'); ?>;color:<?php echo $nf('home'); ?>">Home</a>
       <a class="lk hv-sky" href="<?php echo esc_url(orsoline_url('chi-siamo')); ?>" style="cursor:pointer;padding:10px clamp(10px,1.2vw,18px);white-space:nowrap;border-radius:999px;background:<?php echo $nb('chi'); ?>;color:<?php echo $nf('chi'); ?>">Chi Siamo</a>
       <div class="dd" style="position:relative">
@@ -37,7 +38,7 @@ $logo = get_template_directory_uri() . '/assets/img/logo.png';
         </div>
       </div>
       <a class="lk hv-sky" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;padding:10px clamp(10px,1.2vw,18px);white-space:nowrap;border-radius:999px;background:<?php echo $nb('contatti'); ?>;color:<?php echo $nf('contatti'); ?>">Contatti</a>
-      <a class="lk hv-wine" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;margin-left:10px;white-space:nowrap;background:#a0244a;color:#fff;padding:15px clamp(14px,1.6vw,24px);border-radius:999px;font-weight:600;display:flex;gap:10px;align-items:center">Richiesta Informazioni <span style="width:22px;height:22px;border-radius:50%;background:#fff;color:#a0244a;display:grid;place-items:center;font-size:12px">→</span></a>
+      <a class="lk hv-wine nav-cta" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;margin-left:10px;white-space:nowrap;background:#a0244a;color:#fff;padding:15px clamp(14px,1.6vw,24px);border-radius:999px;font-weight:600;display:flex;gap:10px;align-items:center">Richiesta Informazioni <span style="width:22px;height:22px;border-radius:50%;background:#fff;color:#a0244a;display:grid;place-items:center;font-size:12px">→</span></a>
     </nav>
   </div>
 </header>

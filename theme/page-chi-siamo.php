@@ -17,8 +17,8 @@ get_header();
     </section>
     <section style="max-width:1320px;margin:0 auto;padding:56px 32px 0">
       <div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#a0244a;margin-bottom:28px">Linea storica</div>
-      <div style="position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr))">
-        <div style="position:absolute;left:0;right:0;top:57px;height:1px;background:#d9c3c9"></div>
+      <div class="tl" style="position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr))">
+        <div class="tl-line" style="position:absolute;left:0;right:0;top:57px;height:1px;background:#d9c3c9"></div>
         <?php
         $tl = [['1575', 'Parma', 'cs-1575'], ['1591', 'Maddalena Molinari', 'cs-1591'], ['1623', 'Vittoria Masi', 'cs-1623'], ['1884', 'Milano', 'cs-1884'], ['1898', 'Madre Zileri dal Verme', 'cs-1898'], ['1926', 'La prima missione in Cina', 'cs-1926'], ['1987', 'Nuovo Collegio Universitario', 'cs-1987']];
         foreach ($tl as [$y, $t, $id]) : ?>
@@ -31,7 +31,7 @@ get_header();
       </div>
     </section>
     <section style="max-width:1320px;margin:0 auto;padding:96px 32px 120px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:80px">
-      <aside style="position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:8px">
+      <aside class="cs-aside" style="position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:8px">
         <div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#86737a;margin-bottom:6px">In questa pagina</div>
         <a class="lk hv-fill" href="#cs-storia" data-jump style="cursor:pointer;background:#e3f2fa;color:#a0244a;padding:12px 18px;border-radius:999px;font-weight:500">…dalla storia</a>
         <a class="lk hv-fill" href="#cs-milano" data-jump style="cursor:pointer;background:#e3f2fa;color:#a0244a;padding:12px 18px;border-radius:999px;font-weight:500">…a Milano</a>

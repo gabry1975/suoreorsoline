@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORSOLINE_VERSION', '1.0.0');
+define('ORSOLINE_VERSION', '1.1.0');
 
 require_once __DIR__ . '/inc/data.php';
 require_once __DIR__ . '/inc/contact-form.php';
@@ -22,6 +22,7 @@ add_action('wp_enqueue_scripts', function () {
     $uri = get_template_directory_uri();
     wp_enqueue_style('orsoline-fonts', $uri . '/assets/css/fonts.css', [], ORSOLINE_VERSION);
     wp_enqueue_style('orsoline', get_stylesheet_uri(), ['orsoline-fonts'], ORSOLINE_VERSION);
+    wp_enqueue_style('orsoline-responsive', $uri . '/assets/css/responsive.css', ['orsoline'], ORSOLINE_VERSION);
     wp_enqueue_script('orsoline', $uri . '/assets/js/main.js', [], ORSOLINE_VERSION, true);
 });
 

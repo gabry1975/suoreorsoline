@@ -66,6 +66,7 @@ Non cambiare gli slug delle pagine dalla bacheca. Al go-live: `blog_public=1` e 
 - [ ] Testi e immagini delle nuove pagine Foresteria (`/foresteria/`) ed Eventi (`/eventi/`), aggiunte il 2026-11-18.
 - [ ] Tempi di percorrenza ("xx min") e recensioni reali in Home.
 - [ ] Destinatario definitivo delle email del form Contatti.
+- [ ] Link Utili (Contatti): link e recapiti delle case per ferie di Cortina e Roma (oggi solo testo; in Elementor basta aggiungere l'URL al bottone).
 - [ ] Passaggio a Elementor Pro (header/footer con Theme Builder, form Elementor) quando c'è la licenza.
 - [ ] Verificare il link `/dev/contatti/` del sito online.
 - [ ] Al go-live: dominio, `blog_public=1`, redirect 301.

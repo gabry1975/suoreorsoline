@@ -10,7 +10,7 @@ get_header();
   <main>
     <section style="max-width:1320px;margin:0 auto;padding:56px 32px 48px">
       <div style="font-size:14px;color:#86737a;display:flex;gap:8px"><a class="lk hv-text" href="<?php echo esc_url(orsoline_url()); ?>" style="cursor:pointer">Home</a><span>/</span><span style="color:#2a1a22">Contatti</span></div>
-      <h1 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(64px,10vw,132px);line-height:.9;overflow-wrap:anywhere;letter-spacing:-.045em;margin:24px 0 0">Conta<span style="font-weight:300;color:#a0244a">tti</span></h1>
+      <h1 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(64px,10vw,132px);line-height:.9;overflow-wrap:anywhere;letter-spacing:-.045em;margin:24px 0 0">Conta<span style="font-weight:300;color:#b04a5a">tti</span></h1>
     </section>
     <section style="max-width:1320px;margin:0 auto;padding:0 32px 120px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px;align-items:start">
       <div style="background:#fff;border:1px solid #efe3e5;border-radius:24px;padding:52px">
@@ -18,7 +18,7 @@ get_header();
         <?php echo do_shortcode('[orsoline_form_contatti]'); ?>
       </div>
       <div style="display:flex;flex-direction:column;gap:20px">
-        <div style="background:#a0244a;color:#fff;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:24px">
+        <div style="background:#b04a5a;color:#fff;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:24px">
           <h2 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:32px;letter-spacing:-.02em;margin:0">Contatti</h2>
           <div style="font-size:17px;line-height:1.5">Via Adele Martignoni, 8<br>20124 Milano (MI)<br>Italia</div>
           <a href="tel:026688999" style="font-family:'Funnel Display',sans-serif;font-size:48px;line-height:1;color:#f2d4d3">02/6688999</a>
@@ -30,11 +30,11 @@ get_header();
         <div style="background:#fff;border:1px solid #efe3e5;border-radius:24px;padding:32px 36px">
           <h2 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em;margin:0 0 14px">Link Utili</h2>
           <div style="display:flex;flex-direction:column">
-            <a href="http://www.omscgen.it/" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Suore Orsoline Missionarie del Sacro Cuore<span style="color:#a0244a">↗</span></a>
-            <a href="http://chiesadimilano.it" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Diocesi di Milano<span style="color:#a0244a">↗</span></a>
-            <a href="http://www.radiovaticana.org" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Radio Vaticana<span style="color:#a0244a">↗</span></a>
-            <a href="http://www.news.va" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">La Santa Sede<span style="color:#a0244a">↗</span></a>
-            <a href="http://www.vatican.va" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;color:#2a1a22">Sito Vaticano<span style="color:#a0244a">↗</span></a>
+            <a href="http://www.omscgen.it/" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Suore Orsoline Missionarie del Sacro Cuore<span style="color:#b04a5a">↗</span></a>
+            <a href="http://chiesadimilano.it" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Diocesi di Milano<span style="color:#b04a5a">↗</span></a>
+            <a href="http://www.radiovaticana.org" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Radio Vaticana<span style="color:#b04a5a">↗</span></a>
+            <a href="http://www.news.va" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">La Santa Sede<span style="color:#b04a5a">↗</span></a>
+            <a href="http://www.vatican.va" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;color:#2a1a22">Sito Vaticano<span style="color:#b04a5a">↗</span></a>
           </div>
         </div>
       </div>

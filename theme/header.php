@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 $sec = orsoline_current_section();
 $nb = function ($k) use ($sec) { return $sec === $k ? '#f8e7e6' : 'transparent'; };
-$nf = function ($k) use ($sec) { return $sec === $k ? '#a0244a' : '#2a1a22'; };
+$nf = function ($k) use ($sec) { return $sec === $k ? '#b04a5a' : '#2a1a22'; };
 $logo = get_template_directory_uri() . '/assets/img/logo.png';
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -36,14 +36,14 @@ $logo = get_template_directory_uri() . '/assets/img/logo.png';
             <?php endforeach; ?>
             <?php /* Regolamento: rimanda alla sezione della Home con la scheda e il download del PDF. */ ?>
             <a class="lk hv-pink" href="<?php echo esc_url(orsoline_url() . '#regolamento'); ?>" style="cursor:pointer;display:flex;align-items:center;gap:14px;padding:10px;border-radius:18px">
-              <div style="width:52px;height:52px;border-radius:14px;flex:none;background:#a0244a;color:#fff;display:grid;place-items:center;font:500 11px 'Geist Mono',monospace">PDF</div>
+              <div style="width:52px;height:52px;border-radius:14px;flex:none;background:#b04a5a;color:#fff;display:grid;place-items:center;font:500 11px 'Geist Mono',monospace">PDF</div>
               <div style="font-weight:600;font-size:16px;line-height:1.25">Regolamento</div>
             </a>
           </div>
         </div>
       </div>
       <a class="lk hv-sky" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;padding:10px clamp(10px,1.2vw,18px);white-space:nowrap;border-radius:999px;background:<?php echo $nb('contatti'); ?>;color:<?php echo $nf('contatti'); ?>">Contatti</a>
-      <a class="lk hv-wine nav-cta" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;margin-left:10px;white-space:nowrap;background:#a0244a;color:#fff;padding:15px clamp(14px,1.6vw,24px);border-radius:999px;font-weight:600;display:flex;gap:10px;align-items:center">Richiesta Informazioni <span style="width:22px;height:22px;border-radius:50%;background:#fff;color:#a0244a;display:grid;place-items:center;font-size:12px">→</span></a>
+      <a class="lk hv-wine nav-cta" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;margin-left:10px;white-space:nowrap;background:#b04a5a;color:#fff;padding:15px clamp(14px,1.6vw,24px);border-radius:999px;font-weight:600;display:flex;gap:10px;align-items:center">Richiesta Informazioni <span style="width:22px;height:22px;border-radius:50%;background:#fff;color:#b04a5a;display:grid;place-items:center;font-size:12px">→</span></a>
     </nav>
   </div>
 </header>

@@ -30,8 +30,8 @@ add_shortcode('orsoline_chi_indice', function () {
   <div style="border-left:1px solid #e6d6da;display:flex;flex-direction:column">
     <?php foreach ($tl as [$y, $t, $id]) : ?>
     <a class="lk hv-text" href="#<?php echo $id; ?>" data-jump style="display:block;cursor:pointer;padding:7px 0 7px 18px;position:relative;font-size:14px;line-height:1.45;color:#5a4850">
-      <span style="position:absolute;left:-4px;top:14px;width:7px;height:7px;border-radius:50%;background:#a0244a"></span>
-      <span style="font:500 12px 'Geist Mono',monospace;color:#a0244a;margin-right:10px"><?php echo $y; ?></span><?php echo esc_html($t); ?>
+      <span style="position:absolute;left:-4px;top:14px;width:7px;height:7px;border-radius:50%;background:#b04a5a"></span>
+      <span style="font:500 12px 'Geist Mono',monospace;color:#b04a5a;margin-right:10px"><?php echo $y; ?></span><?php echo esc_html($t); ?>
     </a>
     <?php endforeach; ?>
   </div>
@@ -48,7 +48,7 @@ add_shortcode('orsoline_spazi_menu', function () {
   <?php foreach (orsoline_spazi() as $i => $s) : $on = $s['slug'] === $cur; ?>
   <a class="lk hv-text" href="<?php echo esc_url(orsoline_url($s['slug'])); ?>"<?php echo $on ? ' aria-current="page"' : ''; ?> style="cursor:pointer;display:flex;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid #efe3e5">
     <span style="font:500 11px 'Geist Mono',monospace;color:#b4979f"><?php echo str_pad((string) ($i + 1), 2, '0', STR_PAD_LEFT); ?></span>
-    <span style="<?php echo $on ? 'font-weight:600;color:#a0244a' : ''; ?>"><?php echo esc_html($s['title']); ?></span>
+    <span style="<?php echo $on ? 'font-weight:600;color:#b04a5a' : ''; ?>"><?php echo esc_html($s['title']); ?></span>
   </a>
   <?php endforeach; ?>
 </nav>
@@ -66,12 +66,12 @@ add_shortcode('orsoline_spazi_nav', function () {
     ob_start(); ?>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
   <a class="lk hv-border" href="<?php echo esc_url(orsoline_url($prev['slug'])); ?>" style="cursor:pointer;border:1px solid #efe3e5;background:#fff;border-radius:999px;padding:18px 28px;display:flex;align-items:center;gap:18px">
-    <span style="width:44px;height:44px;border-radius:50%;background:#e3f2fa;color:#a0244a;display:grid;place-items:center">←</span>
+    <span style="width:44px;height:44px;border-radius:50%;background:#e3f2fa;color:#b04a5a;display:grid;place-items:center">←</span>
     <div><div style="font:500 11px 'Geist Mono',monospace;color:#86737a">PRECEDENTE</div><div style="font-weight:600;font-size:20px"><?php echo esc_html($prev['title']); ?></div></div>
   </a>
   <a class="lk hv-border" href="<?php echo esc_url(orsoline_url($next['slug'])); ?>" style="cursor:pointer;border:1px solid #efe3e5;background:#fff;border-radius:999px;padding:18px 28px;display:flex;align-items:center;justify-content:flex-end;gap:18px;text-align:right">
     <div><div style="font:500 11px 'Geist Mono',monospace;color:#86737a">SUCCESSIVO</div><div style="font-weight:600;font-size:20px"><?php echo esc_html($next['title']); ?></div></div>
-    <span style="width:44px;height:44px;border-radius:50%;background:#a0244a;color:#fff;display:grid;place-items:center">→</span>
+    <span style="width:44px;height:44px;border-radius:50%;background:#b04a5a;color:#fff;display:grid;place-items:center">→</span>
   </a>
 </div>
     <?php
@@ -91,9 +91,9 @@ add_shortcode('orsoline_form_contatti', function () {
     ob_start();
     if ($sent) : ?>
 <div style="padding:48px 0;display:flex;flex-direction:column;gap:16px;align-items:flex-start">
-  <div style="width:64px;height:64px;border-radius:50%;background:#f2d4d3;color:#a0244a;display:grid;place-items:center;font-size:28px">✓</div>
+  <div style="width:64px;height:64px;border-radius:50%;background:#f2d4d3;color:#b04a5a;display:grid;place-items:center;font-size:28px">✓</div>
   <div style="font-family:'Funnel Display',sans-serif;font-size:40px;line-height:1.1">Grazie, messaggio inviato.</div>
-  <a class="lk" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;color:#a0244a;text-decoration:underline;font-size:15px">Invia un altro messaggio</a>
+  <a class="lk" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;color:#b04a5a;text-decoration:underline;font-size:15px">Invia un altro messaggio</a>
 </div>
     <?php else : ?>
 <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
@@ -101,8 +101,8 @@ add_shortcode('orsoline_form_contatti', function () {
 <?php wp_nonce_field('orsoline_contatti', 'orsoline_nonce'); ?>
 <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="sito_web" tabindex="-1" autocomplete="off"></div>
 <div style="display:flex;flex-direction:column;gap:30px">
-  <?php if ($error) : ?><p style="margin:0;color:#a0244a;font-weight:600"><?php echo esc_html($error); ?></p><?php endif; ?>
-  <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">La tua email</span><input type="email" name="email" required style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px;outline-color:#a0244a"></label>
+  <?php if ($error) : ?><p style="margin:0;color:#b04a5a;font-weight:600"><?php echo esc_html($error); ?></p><?php endif; ?>
+  <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">La tua email</span><input type="email" name="email" required style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px;outline-color:#b04a5a"></label>
   <div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:15px;font-weight:600">Relazione con la Studentessa</span>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><?php echo $chips('relazione'); ?></div>
   </div>
@@ -120,8 +120,8 @@ add_shortcode('orsoline_form_contatti', function () {
     <div style="display:flex;gap:8px;flex-wrap:wrap"><?php echo $chips('periodo'); ?></div>
   </div>
   <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">Il tuo messaggio</span><textarea name="messaggio" rows="5" style="border:1px solid #e6d6da;background:#fbf8f7;padding:16px 22px;border-radius:24px;resize:vertical"></textarea></label>
-  <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#76636b"><input type="checkbox" name="privacy" value="1" required style="margin-top:4px;accent-color:#a0244a"><span>Ho letto l’informativa privacy e acconsento al trattamento dei dati.</span></label>
-  <button type="submit" class="lk hv-wine" style="cursor:pointer;align-self:flex-start;background:#a0244a;color:#fff;padding:18px 40px;border-radius:999px;font-weight:600;font-size:16px">Invia →</button>
+  <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#76636b"><input type="checkbox" name="privacy" value="1" required style="margin-top:4px;accent-color:#b04a5a"><span>Ho letto l’informativa privacy e acconsento al trattamento dei dati.</span></label>
+  <button type="submit" class="lk hv-wine" style="cursor:pointer;align-self:flex-start;background:#b04a5a;color:#fff;padding:18px 40px;border-radius:999px;font-weight:600;font-size:16px">Invia →</button>
 </div>
 </form>
     <?php endif;

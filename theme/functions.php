@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORSOLINE_VERSION', '2.6.3');
+define('ORSOLINE_VERSION', '2.7.0');
 
 require_once __DIR__ . '/inc/data.php';
 require_once __DIR__ . '/inc/contact-form.php';
@@ -144,6 +144,6 @@ function orsoline_current_section()
 function orsoline_new_badge()
 {
     if (orsoline_show_badges()) {
-        echo '<span style="font:500 10px \'Geist Mono\',monospace;letter-spacing:.08em;border:1px dashed #a0244a;color:#a0244a;padding:4px 8px;border-radius:999px">CONTENUTO NUOVO</span>';
+        echo '<span style="font:500 10px \'Geist Mono\',monospace;letter-spacing:.08em;border:1px dashed #b04a5a;color:#b04a5a;padding:4px 8px;border-radius:999px">CONTENUTO NUOVO</span>';
     }
 }

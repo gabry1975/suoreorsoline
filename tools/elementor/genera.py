@@ -37,6 +37,8 @@ WRAP = {'position', 'top', 'right', 'bottom', 'left', 'inset', 'z-index', 'grid-
         'grid-area', 'align-self', 'justify-self', 'flex', 'flex-grow', 'flex-shrink', 'flex-basis',
         'order', 'margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left'}
 HEADINGS = {'h1', 'h2', 'h3', 'h4', 'h5', 'h6'}
+# Sostituzioni di colore applicate al CSS generato (vedi main()).
+COLOR_MAP = {'#a0244a': '#b04a5a', '160,36,74': '176,74,90'}
 INLINE_TAGS = {'span', 'a', 'label', 'strong', 'em', 'b', 'i', 'small'}
 
 # Classi leggibili per gli stili in linea più comuni dentro i testi.
@@ -345,6 +347,9 @@ def main():
         print('%-32s %d sezioni, %d byte' % (slug, len(data), n))
     css = BASE_CSS + '\n/* Blocchi */\n' + '\n'.join('%s{%s}' % (s, g.rules[s]) for s in g.order) \
         + '\n\n/* Mobile e tablet (da responsive.css) */\n' + g.responsive() + '\n'
+    # Colori cambiati dopo il mockup (2026-11-18): bordeaux #A0244A -> rosa #B04A5A (anche nelle ombre).
+    for old, new in COLOR_MAP.items():
+        css = re.sub(re.escape(old), new, css, flags=re.I)
     open(CSS_OUT, 'w', encoding='utf-8', newline='\n').write(css)
     print('CSS: %d regole, %d byte' % (len(g.order), len(css)))
 

@@ -31,8 +31,8 @@
 /* Etichette della mappa cliccabili (main.js): stessa grafica, bordeaux quando attive. */
 .elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title{cursor:pointer!important;transition:background .2s ease,color .2s ease!important;user-select:none}
 .elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title:hover{background:#d4ecf7!important}
-.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title.is-on{background:#a0244a!important;color:#fff!important}
-.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title:focus-visible{outline:2px solid #a0244a;outline-offset:2px}
+.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title.is-on{background:#b04a5a!important;color:#fff!important}
+.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title:focus-visible{outline:2px solid #b04a5a;outline-offset:2px}
 
 /* su mobile la scheda indirizzo è alta: riquadro più alto per lasciare visibile la mappa */
 @media (max-width:900px){.elementor .e-con:has(> .o-mappa-home){min-height:600px!important}}

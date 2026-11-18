@@ -12,7 +12,7 @@ if ($sec === 'sub') {
 }
 ?>
 <footer style="padding:0 32px 32px">
-  <div style="max-width:1320px;margin:0 auto;background:#a0244a;color:#fbeef1;border-radius:24px;padding:64px 64px 32px">
+  <div style="max-width:1320px;margin:0 auto;background:#b04a5a;color:#fbeef1;border-radius:24px;padding:64px 64px 32px">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.12)">
       <div style="font-weight:600;font-size:clamp(48px,6.5vw,88px);line-height:.9;letter-spacing:-.045em">Vieni a <span style="font-weight:300;color:#f2d4d3">trovarci</span></div>
       <a class="lk hv-white" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;background:#f2d4d3;color:#9a4251;padding:18px 30px;border-radius:999px;font-weight:600">Richiesta Informazioni →</a>
@@ -39,7 +39,7 @@ if ($sec === 'sub') {
 <?php if (orsoline_show_cookie_banner()) : ?>
 <div id="orsoline-cookie" hidden style="position:fixed;left:24px;bottom:24px;z-index:60;max-width:440px;background:#ffffff;border:1px solid #efe3e5;color:#3a2a31;padding:20px 22px;border-radius:20px;font-size:13px;line-height:1.55;display:flex;gap:16px;align-items:center;box-shadow:0 20px 48px -16px rgba(90,20,45,.35)">
   <span>Utilizziamo i cookie per essere sicuri che tu possa avere la migliore esperienza sul nostro sito. Se continui ad utilizzare questo sito noi assumiamo che tu ne sia felice.</span>
-  <button type="button" class="lk" data-cookie-ok style="cursor:pointer;background:#a0244a;color:#fff;padding:10px 18px;border-radius:999px;font-weight:600">Ok</button>
+  <button type="button" class="lk" data-cookie-ok style="cursor:pointer;background:#b04a5a;color:#fff;padding:10px 18px;border-radius:999px;font-weight:600">Ok</button>
 </div>
 <?php endif; ?>
 
@@ -48,7 +48,7 @@ if ($sec === 'sub') {
 </button>
 
 <?php if (orsoline_show_notes() && $notes) : ?>
-<div id="orsoline-notes" style="position:fixed;right:24px;bottom:24px;z-index:70;width:350px;background:#a0244a;color:#fbeef1;border-radius:24px;box-shadow:0 20px 48px -16px rgba(0,0,0,.4);font-size:13px;line-height:1.55;overflow:hidden">
+<div id="orsoline-notes" style="position:fixed;right:24px;bottom:24px;z-index:70;width:350px;background:#b04a5a;color:#fbeef1;border-radius:24px;box-shadow:0 20px 48px -16px rgba(0,0,0,.4);font-size:13px;line-height:1.55;overflow:hidden">
   <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.1)">
     <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#f2d4d3">Note UX v5 · <?php echo esc_html($notes_title); ?></span>
     <button type="button" class="lk" data-notes-hide aria-label="Chiudi note" style="cursor:pointer;opacity:.6;font-size:16px">×</button>
@@ -57,7 +57,7 @@ if ($sec === 'sub') {
     <?php foreach ($notes as $n) : ?><li><?php echo esc_html($n); ?></li><?php endforeach; ?>
   </ol>
 </div>
-<button type="button" class="lk" id="orsoline-notes-btn" hidden style="position:fixed;right:24px;bottom:24px;z-index:70;cursor:pointer;background:#a0244a;color:#f2d4d3;padding:12px 18px;border-radius:999px;font:500 11px 'Geist Mono',monospace;letter-spacing:.1em">NOTE UX</button>
+<button type="button" class="lk" id="orsoline-notes-btn" hidden style="position:fixed;right:24px;bottom:24px;z-index:70;cursor:pointer;background:#b04a5a;color:#f2d4d3;padding:12px 18px;border-radius:999px;font:500 11px 'Geist Mono',monospace;letter-spacing:.1em">NOTE UX</button>
 <?php endif; ?>
 
 </div>

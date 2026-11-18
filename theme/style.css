@@ -10,7 +10,7 @@ License: GNU General Public License v2 or later
 /* Base del mockup */
 body{margin:0;background:#fbf8f7;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
-a{color:#a0244a;text-decoration:none}
+a{color:#b04a5a;text-decoration:none}
 a:hover{color:#c18a8a;text-decoration:underline}
 input,textarea{font:inherit}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -26,9 +26,9 @@ button.lk{font:inherit;color:inherit;background:none;border:0;margin:0;text-alig
 .hv-rose:not(.elementor-widget):hover,.elementor .e-con.hv-rose:hover,.elementor .hv-rose .elementor-button:hover{background:#f2d4d3!important}
 .hv-white:not(.elementor-widget):hover,.elementor .e-con.hv-white:hover,.elementor .hv-white .elementor-button:hover{background:#fff!important}
 .hv-wine:not(.elementor-widget):hover,.elementor .e-con.hv-wine:hover,.elementor .hv-wine .elementor-button:hover{background:#c18a8a!important}
-.hv-fill:not(.elementor-widget):hover,.elementor .e-con.hv-fill:hover,.elementor .hv-fill .elementor-button:hover{background:#a0244a!important;color:#fff!important}
-.hv-border:not(.elementor-widget):hover,.elementor .e-con.hv-border:hover,.elementor .hv-border .elementor-button:hover{border-color:#a0244a!important}
-.hv-text:not(.elementor-widget):hover,.elementor .e-con.hv-text:hover,.elementor .hv-text .elementor-button:hover{color:#a0244a!important}
+.hv-fill:not(.elementor-widget):hover,.elementor .e-con.hv-fill:hover,.elementor .hv-fill .elementor-button:hover{background:#b04a5a!important;color:#fff!important}
+.hv-border:not(.elementor-widget):hover,.elementor .e-con.hv-border:hover,.elementor .hv-border .elementor-button:hover{border-color:#b04a5a!important}
+.hv-text:not(.elementor-widget):hover,.elementor .e-con.hv-text:hover,.elementor .hv-text .elementor-button:hover{color:#b04a5a!important}
 .hv-textw:not(.elementor-widget):hover,.elementor .e-con.hv-textw:hover,.elementor .hv-textw .elementor-button:hover{color:#fff!important}
 .hv-lift:not(.elementor-widget):hover,.elementor .e-con.hv-lift:hover{transform:translateY(-4px)!important}
 
@@ -45,11 +45,11 @@ button.lk{font:inherit;color:inherit;background:none;border:0;margin:0;text-alig
 /* Bottone "Torna su" (tutte le pagine): compare dopo un po' di scorrimento.
    --top-offset viene alzato da main.js quando il banner cookie è visibile sotto (mobile). */
 .to-top{position:fixed;right:24px;bottom:calc(24px + var(--top-offset,0px));z-index:65;width:52px;height:52px;margin:0;padding:0;
-  border:0;border-radius:50%;background:#a0244a;color:#fff;display:grid;place-items:center;cursor:pointer;
+  border:0;border-radius:50%;background:#b04a5a;color:#fff;display:grid;place-items:center;cursor:pointer;
   box-shadow:0 14px 30px -12px rgba(90,20,45,.55);opacity:0;visibility:hidden;transform:translateY(12px);
   transition:opacity .25s ease,transform .25s ease,visibility .25s ease,background .2s ease,bottom .2s ease;-webkit-tap-highlight-color:transparent}
 .to-top.is-visible{opacity:1;visibility:visible;transform:none}
 .to-top:hover{background:#c18a8a}
-.to-top:focus-visible{outline:2px solid #a0244a;outline-offset:3px}
+.to-top:focus-visible{outline:2px solid #b04a5a;outline-offset:3px}
 @media (max-width:900px){.to-top{right:16px;bottom:calc(16px + var(--top-offset,0px));width:48px;height:48px}}
 @media print{.to-top{display:none}}

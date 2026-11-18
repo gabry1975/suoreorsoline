@@ -45,12 +45,19 @@ function orsoline_handle_contact()
         return in_array($v, orsoline_form_options($k), true) ? $v : '';
     };
     $msg = isset($_POST['messaggio']) ? sanitize_textarea_field(wp_unslash($_POST['messaggio'])) : '';
+    // Data di nascita: arriva come AAAA-MM-GG dal campo data, nell'email come GG/MM/AAAA.
+    $nascita = $field('data_nascita');
+    $d = DateTime::createFromFormat('!Y-m-d', $nascita);
+    $nascita = ($d && $d->format('Y-m-d') === $nascita) ? $d->format('d/m/Y') : '';
 
     $body = "Richiesta informazioni dal sito\n\n"
         . 'Email: ' . $email . "\n"
         . 'Relazione con la Studentessa: ' . $pick('relazione') . "\n"
         . 'Nome e Cognome della Studentessa: ' . $field('nome') . "\n"
-        . 'Dati anagrafici: ' . $field('anagrafica') . "\n"
+        . 'Nazionalità: ' . $field('nazionalita') . "\n"
+        . 'Luogo di nascita: ' . $field('luogo_nascita') . "\n"
+        . 'Data di nascita: ' . $nascita . "\n"
+        . 'Comune di residenza: ' . $field('comune_residenza') . "\n"
         . 'Università: ' . $pick('universita') . "\n"
         . 'Periodo di permanenza: ' . $pick('periodo') . "\n\n"
         . "Messaggio:\n" . $msg . "\n\n"

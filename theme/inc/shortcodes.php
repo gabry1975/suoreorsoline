@@ -107,8 +107,11 @@ add_shortcode('orsoline_form_contatti', function () {
     <div style="display:flex;gap:8px;flex-wrap:wrap"><?php echo $chips('relazione'); ?></div>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-    <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">Nome e Cognome della Studentessa</span><input type="text" name="nome" style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px"></label>
-    <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">Dati anagrafici</span><input type="text" name="anagrafica" style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px"></label>
+    <label style="display:flex;flex-direction:column;gap:10px;grid-column:1 / -1"><span style="font-size:15px;font-weight:600">Nome e Cognome della Studentessa</span><input type="text" name="nome" autocomplete="name" style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px"></label>
+    <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">Nazionalità</span><input type="text" name="nazionalita" style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px"></label>
+    <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">Data di nascita</span><input type="date" name="data_nascita" max="<?php echo esc_attr(wp_date('Y-m-d')); ?>" style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px;color:#2a1a22"></label>
+    <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">Luogo di nascita</span><input type="text" name="luogo_nascita" style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px"></label>
+    <label style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;font-weight:600">Comune di residenza</span><input type="text" name="comune_residenza" style="height:56px;border:1px solid #e6d6da;background:#fbf8f7;padding:0 22px;border-radius:999px"></label>
   </div>
   <div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:15px;font-weight:600">Università</span>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><?php echo $chips('universita'); ?></div>

@@ -13,8 +13,8 @@ $paras = $sub['paras'] ?? [];
 $lead = $paras[0] ?? null;
 $rest = array_slice($paras, 1);
 $cols = (!empty($sub['cite']) && !empty($sub['statement'])) ? '1fr 1fr' : '1fr';
-$prev = $spazi[($idx + 6) % 7];
-$next = $spazi[($idx + 1) % 7];
+$prev = $spazi[($idx + count($spazi) - 1) % count($spazi)];
+$next = $spazi[($idx + 1) % count($spazi)];
 get_header();
 ?>
   <main>

@@ -63,6 +63,7 @@ Non cambiare gli slug delle pagine dalla bacheca. Al go-live: `blog_public=1` e 
 - [ ] Cookie e privacy con **iubenda** (al posto del banner provvisorio); collegare l'informativa al form Contatti e al footer.
 - [ ] Sostituire i segnaposto "IMMAGINE · …" con le foto (da Elementor).
 - [ ] Testi delle pagine Cappella e Sale Meeting da riportare dal sito online.
+- [ ] Testi e immagini delle nuove pagine Foresteria (`/foresteria/`) ed Eventi (`/eventi/`), aggiunte il 2026-11-18.
 - [ ] Tempi di percorrenza ("xx min") e recensioni reali in Home.
 - [ ] Destinatario definitivo delle email del form Contatti.
 - [ ] Passaggio a Elementor Pro (header/footer con Theme Builder, form Elementor) quando c'è la licenza.

@@ -49,6 +49,11 @@ function orsoline_spazi()
         ['slug' => 'giardino', 'title' => 'Giardino',
             'paras' => ['Il giardino e le piante ornamentali interne, aiutano a rendere più piacevole il soggiornarvi…in ogni stagione!'],
             'imgs' => [['label' => 'Giardino — vista ampia', 'col' => 'span 2', 'row' => 'span 2'], ['label' => 'Giardino in primavera'], ['label' => 'Piante ornamentali interne']]],
+        // Nuove pagine (2026-11-18), non presenti sul sito online: testi da definire.
+        ['slug' => 'foresteria', 'title' => 'Foresteria', 'missing' => true,
+            'imgs' => [['label' => 'Foresteria — vista d’insieme', 'col' => 'span 2', 'row' => 'span 2'], ['label' => 'Foresteria — camera'], ['label' => 'Foresteria — dettaglio']]],
+        ['slug' => 'eventi', 'title' => 'Eventi', 'missing' => true,
+            'imgs' => [['label' => 'Eventi — momento in Collegio', 'col' => 'span 2', 'row' => 'span 2'], ['label' => 'Eventi — incontro'], ['label' => 'Eventi — festa']]],
     ];
 }
 

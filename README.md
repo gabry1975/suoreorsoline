@@ -58,6 +58,9 @@ Interruttori in `functions.php`:
 Gli URL delle pagine devono restare **identici** a quelli del sito online (vedi `seo/README.md` e `seo/urls-sito-online.csv`).
 Non cambiare gli slug delle pagine dalla bacheca. Al go-live: `blog_public=1` e redirect di `seo/redirects.csv`.
 
+SEO on-page con **Rank Math** (titoli, descrizioni, parole chiave, dati strutturati, sitemap), modificabile dalla bacheca:
+vedi `tools/seo/README.md` per parole chiave e istruzioni.
+
 ## Da fare
 
 - [ ] Cookie e privacy con **iubenda** (al posto del banner provvisorio); collegare l'informativa al form Contatti e al footer.

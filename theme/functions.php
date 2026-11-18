@@ -13,6 +13,24 @@ require_once __DIR__ . '/inc/data.php';
 require_once __DIR__ . '/inc/contact-form.php';
 require_once __DIR__ . '/inc/shortcodes.php';
 
+/**
+ * SEO (Rank Math): le pagine sono del Collegio, non di una persona.
+ * Nello schema JSON-LD l'autore diventa l'organizzazione e si toglie il nodo "Person" senza nome.
+ */
+add_filter('rank_math/json_ld', function ($data) {
+    $org = ['@id' => home_url('/#organization')];
+    foreach ($data as $key => $node) {
+        if (is_array($node) && ($node['@type'] ?? '') === 'Person') {
+            unset($data[$key]);
+            continue;
+        }
+        if (is_array($node) && isset($node['author'])) {
+            $data[$key]['author'] = $org;
+        }
+    }
+    return $data;
+}, 99);
+
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');

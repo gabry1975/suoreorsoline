@@ -10,8 +10,8 @@ License: GNU General Public License v2 or later
 /* Base del mockup */
 body{margin:0;background:#fbf8f7;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
-a{color:#b04a5a;text-decoration:none}
-a:hover{color:#8f3a48;text-decoration:underline}
+a{color:#a0244a;text-decoration:none}
+a:hover{color:#7d1a39;text-decoration:underline}
 input,textarea{font:inherit}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
@@ -24,10 +24,10 @@ button.lk{font:inherit;color:inherit;background:none;border:0;margin:0;text-alig
 .hv-pink:hover{background:#fcecef!important}
 .hv-rose:hover{background:#f7d9df!important}
 .hv-white:hover{background:#fff!important}
-.hv-wine:hover{background:#8f3a48!important}
-.hv-fill:hover{background:#b04a5a!important;color:#fff!important}
-.hv-border:hover{border-color:#b04a5a!important}
-.hv-text:hover{color:#b04a5a!important}
+.hv-wine:hover{background:#7d1a39!important}
+.hv-fill:hover{background:#a0244a!important;color:#fff!important}
+.hv-border:hover{border-color:#a0244a!important}
+.hv-text:hover{color:#a0244a!important}
 .hv-textw:hover{color:#fff!important}
 .hv-lift:hover{transform:translateY(-4px)}
 

@@ -52,9 +52,9 @@
       if (!form) return;
       form.querySelectorAll('[data-chip="' + group + '"]').forEach(function (c) {
         var on = c === chip;
-        c.style.background = on ? '#b04a5a' : '#fff';
+        c.style.background = on ? '#a0244a' : '#fff';
         c.style.color = on ? '#fff' : '#2a1a22';
-        c.style.borderColor = on ? '#b04a5a' : '#e6d6da';
+        c.style.borderColor = on ? '#a0244a' : '#e6d6da';
       });
       var input = form.querySelector('input[name="' + group + '"]');
       if (input) input.value = chip.getAttribute('data-value');

@@ -101,4 +101,57 @@
       window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
     });
   });
+
+  // Home, "Dove siamo": le etichette Metropolitane / Mezzi di superficie / Stazione Centrale
+  // cambiano la vista della mappa; un secondo clic torna al Collegio.
+  // "Apri in Maps" apre Google Maps sulla vista selezionata.
+  // Classi assegnate ai widget in Elementor: o-map-metro, o-map-bus, o-map-centrale, o-map-apri.
+  var mapFrame = document.querySelector('.o-mappa-home iframe');
+  if (mapFrame) {
+    var enc = encodeURIComponent;
+    var baseSrc = mapFrame.getAttribute('src');
+    var addr = 'Via Adele Martignoni 8, 20124 Milano';
+    try { addr = new URL(baseSrc, window.location.href).searchParams.get('q') || addr; } catch (e) {}
+    var openLink = document.querySelector('.o-map-apri a.elementor-button');
+    var baseHref = openLink ? openLink.getAttribute('href') : '';
+    var views = {
+      'o-map-metro': {
+        embed: 'q=' + enc('metropolitana near ' + addr),
+        open: 'https://www.google.com/maps/search/?api=1&query=' + enc('metropolitana vicino a ' + addr)
+      },
+      'o-map-bus': {
+        embed: 'q=' + enc('fermata tram autobus near ' + addr),
+        open: 'https://www.google.com/maps/search/?api=1&query=' + enc('fermata tram autobus vicino a ' + addr)
+      },
+      'o-map-centrale': {
+        embed: 'saddr=' + enc(addr) + '&daddr=' + enc('Milano Centrale') + '&dirflg=w',
+        open: 'https://www.google.com/maps/dir/?api=1&origin=' + enc(addr) + '&destination=' + enc('Milano Centrale') + '&travelmode=walking'
+      }
+    };
+    var chips = [];
+    var setView = function (cls) {
+      var v = cls ? views[cls] : null;
+      mapFrame.setAttribute('src', v ? 'https://maps.google.com/maps?' + v.embed + '&t=m&output=embed' : baseSrc);
+      if (openLink) openLink.setAttribute('href', v ? v.open : baseHref);
+      chips.forEach(function (c) {
+        var on = c.cls === cls;
+        c.el.classList.toggle('is-on', on);
+        c.el.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    };
+    Object.keys(views).forEach(function (cls) {
+      var el = document.querySelector('.' + cls + ' .elementor-heading-title');
+      if (!el) return;
+      var chip = { cls: cls, el: el };
+      chips.push(chip);
+      el.setAttribute('role', 'button');
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('aria-pressed', 'false');
+      var toggle = function () { setView(el.classList.contains('is-on') ? null : cls); };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
+    });
+  }
 })();

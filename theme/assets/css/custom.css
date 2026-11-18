@@ -14,6 +14,12 @@
 .elementor .elementor-widget.o-mappa-home{position:absolute!important;inset:0!important;z-index:0;background:#dcedf6}
 .elementor .o-mappa-home .elementor-custom-embed,.elementor .o-mappa-home iframe{height:100%!important;width:100%!important;display:block;border:0;margin:0}
 .elementor .elementor-widget.o-mappa-home ~ .e-con{z-index:1!important}
+/* Etichette della mappa cliccabili (main.js): stessa grafica, bordeaux quando attive. */
+.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title{cursor:pointer!important;transition:background .2s ease,color .2s ease!important;user-select:none}
+.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title:hover{background:#d4ecf7!important}
+.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title.is-on{background:#a0244a!important;color:#fff!important}
+.elementor :is(.o-map-metro,.o-map-bus,.o-map-centrale) .elementor-heading-title:focus-visible{outline:2px solid #a0244a;outline-offset:2px}
+
 /* su mobile la scheda indirizzo è alta: riquadro più alto per lasciare visibile la mappa */
 @media (max-width:900px){.elementor .e-con:has(> .o-mappa-home){min-height:600px!important}}
 

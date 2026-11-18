@@ -1,0 +1,375 @@
+/*
+ * Stile dei blocchi Elementor del tema Orsoline.
+ * FILE GENERATO da tools/elementor/genera.py: non modificarlo a mano.
+ * Le classi o-xxxxxx sono assegnate ai contenitori/widget delle pagine (campo "Classi CSS" in Elementor).
+ * Le proprietà sono !important: il design resta quello del mockup anche se si cambiano gli stili in Elementor;
+ * lo sfondo dei riquadri immagine invece si può sostituire da Elementor (Stile > Sfondo).
+ */
+
+/* Azzera i default di Elementor sui blocchi del tema */
+.elementor .e-con.o{display:block!important;flex-direction:row!important;flex-wrap:nowrap!important;justify-content:normal!important;align-items:normal!important;align-content:normal!important;gap:normal!important;width:auto!important;max-width:none!important;min-width:0;height:auto!important;min-height:0!important;padding:0!important;margin:0!important;position:static!important;overflow:visible!important;z-index:auto!important;border-radius:0!important;transition:none!important;flex:0 1 auto!important;align-self:auto!important;order:0!important;color:inherit}
+.elementor .elementor-widget.o{margin:0!important;position:static!important;flex:0 1 auto!important;align-self:auto!important;width:auto!important;max-width:none!important}
+.elementor .o .elementor-heading-title{margin:0!important;padding:0!important;line-height:inherit!important;color:inherit;font-family:inherit}
+.elementor .o :where(div,span).elementor-heading-title{font-size:inherit!important;font-weight:inherit!important}
+.elementor .o-btn .elementor-button{background:none!important;border:0!important;border-radius:0!important;padding:0!important;margin:0!important;font:inherit!important;color:inherit!important;line-height:inherit!important;letter-spacing:inherit!important;text-transform:none!important;text-decoration:none!important;box-shadow:none!important;transition:none!important;width:auto!important;text-align:inherit!important;display:inline!important;fill:currentColor}
+.elementor .o-btn .elementor-button-content-wrapper,.elementor .o-btn .elementor-button-text{display:contents!important}
+.elementor a.e-con.o{text-decoration:none!important}
+.elementor .elementor-widget-text-editor.o{color:inherit}
+
+/* Blocchi */
+.elementor .e-con.o-ddbcff{padding:24px 32px 0!important}
+.elementor .e-con.o-390c9a{position:relative!important;max-width:1456px!important;margin:0 auto!important;height:max(640px,calc(100vh - 140px))!important;border-radius:24px!important;overflow:hidden!important;background-image:repeating-linear-gradient(135deg,#dcedf6 0 14px,#d1e6f1 14px 28px);display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.elementor .elementor-widget.o-7036b4{position:absolute!important;top:20px!important;right:20px!important}
+.elementor .o-7036b4 .elementor-heading-title{font:500 11px 'Geist Mono',monospace!important;background:#fff!important;color:#76636b!important;padding:7px 12px!important;border-radius:999px!important;display:block!important}
+.elementor .e-con.o-1d1199{position:absolute!important;inset:0!important;background-image:linear-gradient(180deg,rgba(90,20,45,.15) 0%,rgba(90,20,45,.55) 100%)}
+.elementor .e-con.o-27dedb{position:relative!important;max-width:900px!important;padding:0 32px!important;color:#fff!important;display:flex!important;flex-direction:column!important;align-items:center!important}
+.elementor .elementor-widget.o-5137d5{margin-bottom:28px!important}
+.elementor .o-5137d5 .elementor-heading-title{background:rgba(255,255,255,.18)!important;backdrop-filter:blur(8px)!important;padding:8px 16px!important;border-radius:999px!important;font-size:14px!important;font-weight:500!important;display:block!important}
+.elementor .elementor-widget.o-92eeab{margin:0 0 24px!important}
+.elementor .o-92eeab .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:clamp(48px,6.4vw,96px)!important;line-height:.95!important;letter-spacing:-.04em!important;text-wrap:balance!important;display:block!important}
+.elementor .o-accent-chiaro{font-weight:300!important;color:#f2d4d3!important}
+.elementor .elementor-widget.o-c1ad3a{font-size:20px!important;color:#fbeef1!important}
+.elementor .o-c1ad3a p{margin:0 0 36px!important}
+.elementor .e-con.o-371d84{display:flex!important;gap:10px!important;flex-wrap:wrap!important;justify-content:center!important}
+.elementor .o-2938a6 .elementor-button{cursor:pointer!important;background:#fff!important;color:#a0244a!important;padding:16px 28px!important;border-radius:999px!important;font-weight:600!important;white-space:nowrap!important;display:block!important}
+.elementor .o-8cdd96 .elementor-button{cursor:pointer!important;background:#a0244a!important;color:#fff!important;padding:16px 28px!important;border-radius:999px!important;font-weight:600!important;white-space:nowrap!important;display:block!important}
+.elementor .e-con.o-78d296{max-width:1320px!important;margin:0 auto!important;padding:120px 32px 100px!important}
+.elementor .elementor-widget.o-6ec88c{font-size:46px!important;line-height:1.15!important;letter-spacing:-.02em!important;font-weight:500!important;max-width:1120px!important;text-wrap:pretty!important}
+.elementor .o-6ec88c p{margin:0 0 72px!important}
+.elementor .o-accent{font-weight:300!important;color:#a0244a!important}
+.elementor .e-con.o-eae24f{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important}
+.elementor .e-con.o-53d51a{background:#fff!important;border:1px solid #efe3e5!important;border-radius:20px!important;padding:32px!important;display:flex!important;flex-direction:column!important;gap:40px!important}
+.elementor .o-b6003e .elementor-heading-title{width:48px!important;height:48px!important;border-radius:50%!important;background:#d4ecf7!important;color:#1f5f82!important;display:grid!important;place-items:center!important;font:500 14px 'Geist Mono',monospace!important}
+.elementor .elementor-widget.o-18a22e{font-size:18px!important}
+.elementor .o-18a22e p{margin:0!important}
+.elementor .e-con.o-7f9161{max-width:1320px!important;margin:0 auto!important;padding:0 32px 120px!important}
+.elementor .e-con.o-d58737{background:#f8e7e6!important;border-radius:24px!important;padding:80px 72px!important}
+.elementor .e-con.o-2f00a5{display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;max-width:820px!important;margin:0 auto 64px!important;gap:20px!important}
+.elementor .e-con.o-896387{display:flex!important;gap:10px!important;align-items:center!important}
+.elementor .o-10a8ad .elementor-heading-title{font:500 11px 'Geist Mono',monospace!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:#a0244a!important;display:block!important}
+.elementor .o-4f6a0d .elementor-heading-title{font:500 10px 'Geist Mono',monospace!important;letter-spacing:.08em!important;border:1px dashed #a0244a!important;color:#a0244a!important;padding:4px 8px!important;border-radius:999px!important;display:block!important}
+.elementor .elementor-widget.o-3dd3e3{margin:0!important}
+.elementor .o-3dd3e3 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:clamp(40px,4.6vw,64px)!important;line-height:1!important;letter-spacing:-.035em!important;text-wrap:balance!important;display:block!important}
+.elementor .elementor-widget.o-74dc3c{font-size:19px!important;color:#5a4850!important;text-wrap:pretty!important}
+.elementor .o-74dc3c p{margin:0!important}
+.elementor .e-con.o-826999{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(380px,1fr))!important;gap:24px!important;align-items:stretch!important}
+.elementor .e-con.o-2c4a98{border-radius:20px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;align-items:flex-end!important;padding:14px!important;min-height:420px!important}
+.elementor .o-76d6b6 .elementor-heading-title{font:500 10px 'Geist Mono',monospace!important;background:#fff!important;color:#76636b!important;padding:5px 9px!important;border-radius:999px!important;display:block!important}
+.elementor .e-con.o-33831a{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))!important;gap:12px!important}
+.elementor .e-con.o-71625b{background:#fff!important;border-radius:20px!important;padding:28px!important;display:flex!important;flex-direction:column!important;gap:12px!important}
+.elementor .o-206f64 .elementor-heading-title{width:40px!important;height:40px!important;border-radius:50%!important;background:#d4ecf7!important;color:#1f5f82!important;display:grid!important;place-items:center!important;font-weight:600!important}
+.elementor .o-71dc2c .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:22px!important;letter-spacing:-.01em!important;display:block!important}
+.elementor .elementor-widget.o-89d3e3{font-size:15px!important;color:#5a4850!important}
+.elementor .o-89d3e3 p{margin:0!important}
+.elementor .e-con.o-ccb4f7{display:flex!important;justify-content:space-between!important;align-items:flex-end!important;margin-bottom:36px!important;gap:24px!important}
+.elementor .elementor-widget.o-e2b70f{margin:0!important}
+.elementor .o-e2b70f .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:64px!important;line-height:1!important;letter-spacing:-.035em!important;display:block!important}
+.elementor .o-1bfd79 .elementor-button{cursor:pointer!important;border:1px solid #2a1a22!important;padding:12px 22px!important;border-radius:999px!important;font-weight:500!important;font-size:15px!important;display:block!important}
+.elementor .e-con.o-431e5b{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-rows:280px!important;gap:20px!important}
+.elementor .e-con.o-22ec5f{cursor:pointer!important;grid-column:span 2!important;grid-row:span 2!important;border-radius:20px!important;position:relative!important;overflow:hidden!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;flex-direction:column!important;justify-content:space-between!important;padding:20px!important;transition:transform .25s!important}
+.elementor .elementor-widget.o-11c6a9{align-self:flex-start!important}
+.elementor .o-11c6a9 .elementor-heading-title{font:500 10px 'Geist Mono',monospace!important;background:#ffffff!important;color:#76636b!important;padding:6px 10px!important;border-radius:999px!important;display:block!important}
+.elementor .e-con.o-411230{background:#ffffff!important;border-radius:20px!important;padding:14px 18px!important;display:flex!important;justify-content:space-between!important;align-items:center!important;gap:12px!important}
+.elementor .o-83db30 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:23px!important;line-height:1.15!important;letter-spacing:-.015em!important;display:block!important}
+.elementor .elementor-widget.o-490e19{flex:none!important}
+.elementor .o-490e19 .elementor-heading-title{width:38px!important;height:38px!important;border-radius:50%!important;background:#a0244a!important;color:#fff!important;display:grid!important;place-items:center!important}
+.elementor .e-con.o-52e3b3{cursor:pointer!important;grid-column:span 1!important;grid-row:span 1!important;border-radius:20px!important;position:relative!important;overflow:hidden!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;flex-direction:column!important;justify-content:space-between!important;padding:20px!important;transition:transform .25s!important}
+.elementor .e-con.o-15d259{cursor:pointer!important;grid-column:span 2!important;grid-row:span 1!important;border-radius:20px!important;position:relative!important;overflow:hidden!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;flex-direction:column!important;justify-content:space-between!important;padding:20px!important;transition:transform .25s!important}
+.elementor .e-con.o-813854{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)!important;gap:56px!important;align-items:end!important;margin-bottom:40px!important}
+.elementor .e-con.o-968d4c{display:flex!important;flex-direction:column!important;gap:18px!important}
+.elementor .elementor-widget.o-f90078{margin:0!important}
+.elementor .o-f90078 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:clamp(40px,4.6vw,64px)!important;line-height:1!important;letter-spacing:-.035em!important;display:block!important}
+.elementor .elementor-widget.o-b10fb4{font-size:18px!important;color:#5a4850!important;max-width:620px!important}
+.elementor .o-b10fb4 p{margin:0!important}
+.elementor .e-con.o-e3c109{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))!important;gap:12px!important}
+.elementor .e-con.o-e59216{background:#fff!important;border:1px solid #efe3e5!important;border-radius:20px!important;padding:28px!important;display:flex!important;flex-direction:column!important;gap:18px!important}
+.elementor .o-65b736 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:24px!important;letter-spacing:-.015em!important;display:block!important}
+.elementor .e-con.o-86fb8e{display:flex!important;flex-direction:column!important}
+.elementor .e-con.o-3ba6c3{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:12px!important;padding:11px 0!important;border-top:1px solid #f3e9eb!important;font-size:15px!important}
+.elementor .o-b31e4f .elementor-heading-title{min-width:0!important;display:block!important}
+.elementor .elementor-widget.o-a74061{flex-shrink:0!important}
+.elementor .o-a74061 .elementor-heading-title{font:500 11px 'Geist Mono',monospace!important;color:#1f5f82!important;background:#e3f2fa!important;padding:4px 9px!important;border-radius:999px!important;white-space:nowrap!important;display:block!important}
+.elementor .elementor-widget.o-7f9d1e{font:500 11px 'Geist Mono',monospace!important;color:#86737a!important}
+.elementor .o-7f9d1e p{margin:14px 0 0!important}
+.elementor .e-con.o-dd0f35{background:#e3f2fa!important;padding:110px 32px!important;margin-bottom:120px!important}
+.elementor .e-con.o-e149a6{max-width:1320px!important;margin:0 auto!important}
+.elementor .e-con.o-d5d005{display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;gap:18px!important;margin-bottom:56px!important}
+.elementor .o-e99792 .elementor-heading-title{font:500 11px 'Geist Mono',monospace!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:#1f5f82!important;display:block!important}
+.elementor .e-con.o-5ae02d{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
+.elementor .e-con.o-dc3808{margin:0!important;background:#fff!important;border:1px solid #efe3e5!important;border-radius:20px!important;padding:32px!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;gap:32px!important}
+.elementor .e-con.o-9f1026{display:flex!important;flex-direction:column!important;gap:16px!important}
+.elementor .o-8d9fb1 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-size:56px!important;line-height:.6!important;color:#f2d4d3!important;display:block!important}
+.elementor .elementor-widget.o-d00973{margin:0!important;font-size:18px!important;line-height:1.55!important;color:#3a2a31!important}
+.elementor .o-d00973 p{margin:0!important}
+.elementor .e-con.o-167cb3{display:flex!important;align-items:center!important;gap:14px!important}
+.elementor .e-con.o-6a15f3{width:48px!important;height:48px!important;flex:none!important;border-radius:50%!important;background-image:repeating-linear-gradient(135deg,#dcedf6 0 6px,#d1e6f1 6px 12px)}
+.elementor .o-920732 .elementor-heading-title{display:block!important;font-weight:600!important}
+.elementor .o-a07091 .elementor-heading-title{display:block!important;font-size:14px!important;color:#86737a!important}
+.elementor .elementor-widget.o-177ae5{text-align:center!important;font:500 11px 'Geist Mono',monospace!important;color:#1f5f82!important}
+.elementor .o-177ae5 p{margin:24px 0 0!important}
+.elementor .e-con.o-c01a5f{background:#f8e7e6!important;border-radius:24px!important;padding:72px!important;display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)!important;gap:64px!important;align-items:center!important}
+.elementor .o-77fa80 .elementor-heading-title{background:#fff!important;color:#a0244a!important;padding:7px 14px!important;border-radius:999px!important;font-size:13px!important;font-weight:500!important;display:inline!important}
+.elementor .elementor-widget.o-bca8f3{margin:24px 0 28px!important}
+.elementor .o-bca8f3 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:72px!important;line-height:.95!important;letter-spacing:-.035em!important;display:block!important}
+.elementor .elementor-widget.o-8b4ba9{font-size:19px!important;color:#5a4850!important;text-wrap:pretty!important}
+.elementor .o-8b4ba9 p{margin:0!important}
+.elementor .e-con.o-e63f0a{background:#ffffff!important;border-radius:20px!important;padding:36px!important;box-shadow:0 24px 48px -28px rgba(90,20,45,.35)!important}
+.elementor .e-con.o-cef7d7{display:flex!important;align-items:center!important;gap:14px!important;margin-bottom:20px!important}
+.elementor .o-0f90d9 .elementor-heading-title{width:56px!important;height:68px!important;border-radius:10px!important;background:#a0244a!important;color:#fff!important;display:grid!important;place-items:center!important;font:500 12px 'Geist Mono',monospace!important}
+.elementor .o-c25a94 .elementor-heading-title{font-weight:600!important;font-size:20px!important;display:block!important}
+.elementor .o-aa1401 .elementor-heading-title{font:500 12px 'Geist Mono',monospace!important;color:#86737a!important;display:block!important}
+.elementor .elementor-widget.o-ae9091{font-size:16px!important;color:#5a4850!important}
+.elementor .o-ae9091 p{margin:0 0 28px!important}
+.elementor .e-con.o-2c57bd{display:flex!important;gap:10px!important;flex-wrap:wrap!important}
+.elementor .o-555bda .elementor-button{background:#a0244a!important;color:#fff!important;padding:14px 22px!important;border-radius:999px!important;font-weight:600!important;text-decoration:none!important;display:block!important}
+.elementor .o-fb4020 .elementor-button{cursor:pointer!important;border:1px solid #a0244a!important;color:#a0244a!important;padding:13px 22px!important;border-radius:999px!important;font-weight:500!important;display:block!important}
+.elementor .elementor-widget.o-d43664{margin:0 0 28px!important}
+.elementor .o-d43664 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:56px!important;line-height:1!important;letter-spacing:-.035em!important;display:block!important}
+.elementor .e-con.o-e1b315{display:grid!important;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr)!important;gap:16px!important;min-height:560px!important}
+.elementor .e-con.o-5a5652{position:relative!important;border-radius:24px!important;overflow:hidden!important;background-image:repeating-linear-gradient(135deg,#dcedf6 0 14px,#d1e6f1 14px 28px);min-height:480px!important}
+.elementor .elementor-widget.o-dda7c3{position:absolute!important;top:18px!important;left:18px!important}
+.elementor .o-dda7c3 .elementor-heading-title{font:500 11px 'Geist Mono',monospace!important;background:#fff!important;color:#76636b!important;padding:7px 12px!important;border-radius:999px!important;display:block!important}
+.elementor .e-con.o-76bc33{position:absolute!important;left:50%!important;top:44%!important;transform:translate(-50%,-100%)!important;display:flex!important;flex-direction:column!important;align-items:center!important}
+.elementor .o-bc27de .elementor-heading-title{background:#a0244a!important;color:#fff!important;padding:10px 16px!important;border-radius:14px!important;font-weight:600!important;font-size:14px!important;white-space:nowrap!important;box-shadow:0 12px 24px -8px rgba(160,36,74,.5)!important;display:block!important}
+.elementor .e-con.o-7849e8{width:14px!important;height:14px!important;background:#a0244a!important;transform:rotate(45deg)!important;margin-top:-8px!important}
+.elementor .e-con.o-f8b88c{width:18px!important;height:18px!important;border-radius:50%!important;background:#a0244a!important;border:4px solid #fff!important;margin-top:6px!important;box-shadow:0 0 0 10px rgba(160,36,74,.18)!important}
+.elementor .e-con.o-9c8b68{position:absolute!important;left:16px!important;right:16px!important;bottom:16px!important;background:#fff!important;border-radius:18px!important;padding:22px 24px!important;display:flex!important;justify-content:space-between!important;align-items:flex-end!important;gap:20px!important;flex-wrap:wrap!important;box-shadow:0 20px 40px -20px rgba(90,20,45,.3)!important}
+.elementor .e-con.o-63eb45{display:flex!important;flex-direction:column!important;gap:12px!important}
+.elementor .o-21c207 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:22px!important;line-height:1.2!important;letter-spacing:-.01em!important;color:#2a1a22!important;display:block!important}
+.elementor .e-con.o-31db65{display:flex!important;gap:6px!important;flex-wrap:wrap!important}
+.elementor .o-126972 .elementor-heading-title{background:#e3f2fa!important;color:#1f5f82!important;padding:6px 12px!important;border-radius:999px!important;font-size:13px!important;font-weight:500!important;display:block!important}
+.elementor .elementor-widget.o-99d23c{flex:none!important}
+.elementor .o-99d23c .elementor-button{background:#a0244a!important;color:#fff!important;padding:12px 18px!important;border-radius:999px!important;font-size:14px!important;font-weight:600!important;text-decoration:none!important;white-space:nowrap!important;display:block!important}
+.elementor .e-con.o-baf9bc{background:#f8e7e6!important;border-radius:24px!important;padding:12px!important;display:flex!important;flex-direction:column!important;gap:12px!important}
+.elementor .e-con.o-d86903{flex:1!important;min-height:240px!important;border-radius:16px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;align-items:flex-end!important;padding:12px!important}
+.elementor .e-con.o-82d459{padding:16px 18px 18px!important;display:flex!important;flex-direction:column!important;gap:20px!important}
+.elementor .elementor-widget.o-28b843{margin:0 0 10px!important}
+.elementor .o-28b843 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:34px!important;letter-spacing:-.025em!important;line-height:1.05!important;color:#2a1a22!important;display:block!important}
+.elementor .elementor-widget.o-fb917d{font-size:17px!important;color:#5a4850!important}
+.elementor .o-fb917d p{margin:0!important}
+.elementor .e-con.o-30317c{display:flex!important;gap:8px!important;flex-wrap:wrap!important}
+.elementor .o-32b5e0 .elementor-button{background:#a0244a!important;color:#fff!important;padding:12px 20px!important;border-radius:999px!important;font-weight:600!important;font-size:15px!important;text-decoration:none!important;white-space:nowrap!important;display:block!important}
+.elementor .o-826269 .elementor-button{cursor:pointer!important;background:#fff!important;color:#a0244a!important;padding:12px 20px!important;border-radius:999px!important;font-weight:600!important;font-size:15px!important;white-space:nowrap!important;display:block!important}
+.elementor .e-con.o-2f1e03{max-width:1320px!important;margin:0 auto!important;padding:56px 32px 0!important}
+.elementor .e-con.o-ae1ebf{font-size:14px!important;color:#86737a!important;display:flex!important;gap:8px!important}
+.elementor .o-4a16ab .elementor-button{cursor:pointer!important;display:block!important}
+.elementor .o-d8b7c4 .elementor-heading-title{display:block!important}
+.elementor .o-4bdafa .elementor-heading-title{color:#2a1a22!important;display:block!important}
+.elementor .elementor-widget.o-f497e6{margin:24px 0 48px!important}
+.elementor .o-f497e6 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:clamp(64px,10vw,132px)!important;line-height:.9!important;overflow-wrap:anywhere!important;letter-spacing:-.045em!important;display:block!important}
+.elementor .e-con.o-712450{height:460px!important;border-radius:24px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;align-items:flex-end!important;padding:24px!important}
+.elementor .o-e9a177 .elementor-heading-title{font:500 11px 'Geist Mono',monospace!important;background:#ffffff!important;color:#76636b!important;padding:7px 12px!important;border-radius:999px!important;display:block!important}
+.elementor .e-con.o-73dc9b{max-width:1320px!important;margin:0 auto!important;padding:96px 32px 120px!important;display:grid!important;grid-template-columns:260px minmax(0,1fr)!important;gap:80px!important}
+.elementor .elementor-widget.o-6f0203{position:sticky!important;top:120px!important;align-self:start!important}
+.elementor .e-con.o-9edfdd{max-width:760px!important;font-size:19px!important;line-height:1.7!important;color:#3a2a31!important}
+.elementor .elementor-widget.o-8f5896{margin:0 0 36px!important}
+.elementor .o-8f5896 .elementor-heading-title{font-weight:600!important;font-size:48px!important;line-height:1.05!important;letter-spacing:-.03em!important;color:#2a1a22!important;display:block!important}
+.elementor .elementor-widget.o-52c2a2{font-size:26px!important;line-height:1.4!important;letter-spacing:-.01em!important;font-weight:500!important;color:#2a1a22!important}
+.elementor .o-52c2a2 p{margin:0 0 28px!important}
+.elementor .o-bccbed p{margin:0 0 24px!important}
+.elementor .e-con.o-8a9cc1{display:grid!important;grid-template-columns:240px minmax(0,1fr)!important;gap:32px!important;margin:48px 0!important;align-items:center!important}
+.elementor .e-con.o-e79bf4{aspect-ratio:3/4!important;border-radius:20px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;align-items:flex-end!important;justify-content:center!important;padding:16px!important}
+.elementor .o-bd973c .elementor-heading-title{font:500 10px 'Geist Mono',monospace!important;background:#ffffff!important;color:#76636b!important;padding:5px 9px!important;border-radius:999px!important;display:block!important}
+.elementor .o-8870c2 p{margin:0!important}
+.elementor .elementor-widget.o-38445b{margin:56px -48px!important;padding:48px 56px!important;background:#a0244a!important;color:#fff!important;border-radius:20px!important;font-family:'Funnel Display',sans-serif!important;font-size:34px!important;line-height:1.25!important}
+.elementor .o-38445b p{margin:0!important}
+.elementor .o-b49143 p{margin:0 0 96px!important}
+.elementor .e-con.o-950f62{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;margin:40px 0!important}
+.elementor .e-con.o-116de5{aspect-ratio:4/3!important;border-radius:20px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;align-items:flex-end!important;padding:14px!important}
+.elementor .o-b98364 p{margin:0 0 32px!important}
+.elementor .e-con.o-56a359{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin-bottom:48px!important}
+.elementor .o-d291b4 .elementor-heading-title{background:#fff!important;border:1px solid #efe3e5!important;padding:8px 16px!important;border-radius:999px!important;font-size:15px!important;display:block!important}
+.elementor .o-f9ddad .elementor-button{cursor:pointer!important;display:inline-flex!important;font-size:16px!important;font-weight:600!important;background:#a0244a!important;color:#fff!important;padding:16px 28px!important;border-radius:999px!important}
+.elementor .e-con.o-64b580{max-width:1320px!important;margin:0 auto!important;padding:40px 32px 0!important}
+.elementor .e-con.o-0db37a{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)!important;gap:20px!important;min-height:520px!important}
+.elementor .e-con.o-10946e{background:#a0244a!important;color:#fff!important;border-radius:24px!important;padding:48px!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important}
+.elementor .e-con.o-9af8c7{font-size:14px!important;opacity:.8!important;display:flex!important;gap:8px!important}
+.elementor .e-con.o-d7ccf0{width:56px!important;height:4px!important;border-radius:2px!important;background:#f2d4d3!important;margin-bottom:28px!important}
+.elementor .elementor-widget.o-748e95{margin:0!important}
+.elementor .o-748e95 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:clamp(52px,6vw,84px)!important;overflow-wrap:anywhere!important;line-height:.98!important;letter-spacing:-.035em!important;text-wrap:balance!important;display:block!important}
+.elementor .e-con.o-cca165{border-radius:24px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;align-items:flex-end!important;padding:22px!important}
+.elementor .e-con.o-9b74c8{max-width:1320px!important;margin:0 auto!important;padding:88px 32px 100px!important;display:grid!important;grid-template-columns:240px minmax(0,1fr)!important;gap:72px!important}
+.elementor .elementor-widget.o-851967{position:sticky!important;top:120px!important;align-self:start!important}
+.elementor .e-con.o-430348{min-width:0!important}
+.elementor .elementor-widget.o-d5bcf1{margin-bottom:48px!important}
+.elementor .o-d5bcf1 .elementor-heading-title{border:1.5px dashed #c99aa6!important;background:#fff!important;border-radius:24px!important;padding:28px 32px!important;max-width:860px!important;font:14px/1.6 'Geist Mono',monospace!important;color:#76636b!important;display:block!important}
+.elementor .e-con.o-34d11a{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:80px!important;margin-bottom:72px!important}
+.elementor .e-con.o-6442cc{display:flex!important;flex-direction:column!important;gap:18px!important;font-size:18px!important;color:#3a2a31!important}
+.elementor .e-con.o-038b24{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-rows:300px!important;gap:16px!important;margin-bottom:72px!important}
+.elementor .e-con.o-28e540{margin:0!important;grid-column:span 2!important;grid-row:span 2!important;border-radius:20px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;flex-direction:column!important;justify-content:space-between!important;align-items:flex-start!important;padding:16px!important}
+.elementor .e-con.o-a021dc{margin:0!important;grid-column:span 1!important;grid-row:span 1!important;border-radius:20px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;flex-direction:column!important;justify-content:space-between!important;align-items:flex-start!important;padding:16px!important}
+.elementor .e-con.o-7a68f2{display:grid!important;grid-template-columns:1fr!important;gap:16px!important;margin-bottom:72px!important}
+.elementor .e-con.o-e9f8ff{background:#e3f2fa!important;border-radius:24px!important;padding:56px 64px!important;display:flex!important;justify-content:space-between!important;align-items:center!important;gap:40px!important;flex-wrap:wrap!important}
+.elementor .elementor-widget.o-d01c80{margin:0 0 14px!important}
+.elementor .o-d01c80 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:56px!important;line-height:1!important;letter-spacing:-.035em!important;display:block!important}
+.elementor .elementor-widget.o-c7dd6c{font-size:19px!important;color:#5a4850!important}
+.elementor .o-c7dd6c p{margin:0!important}
+.elementor .o-331fd4 .elementor-button{cursor:pointer!important;background:#a0244a!important;color:#fff!important;padding:18px 30px!important;border-radius:999px!important;font-weight:600!important;display:block!important}
+.elementor .elementor-widget.o-56942f{font-size:34px!important;line-height:1.2!important;letter-spacing:-.02em!important;font-weight:500!important;text-wrap:pretty!important}
+.elementor .o-56942f p{margin:0!important}
+.elementor .elementor-widget.o-e59a02{text-wrap:pretty!important}
+.elementor .o-e59a02 p{margin:0!important}
+.elementor .e-con.o-e2f0ea{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin-bottom:72px!important}
+.elementor .e-con.o-0fb88a{background:#fff!important;border:1px solid #efe3e5!important;border-radius:20px!important;padding:28px!important}
+.elementor .elementor-widget.o-89e2a6{margin-bottom:24px!important}
+.elementor .o-89e2a6 .elementor-heading-title{background:#e3f2fa!important;color:#a0244a!important;display:inline-block!important;padding:5px 12px!important;border-radius:999px!important;font-size:13px!important;font-weight:500!important}
+.elementor .o-db40c5 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-size:40px!important;line-height:1!important;display:block!important}
+.elementor .e-con.o-306936{margin:0!important;grid-column:span 2!important;grid-row:span 1!important;border-radius:20px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;flex-direction:column!important;justify-content:space-between!important;align-items:flex-start!important;padding:16px!important}
+.elementor .e-con.o-998706{background:#e3f2fa!important;border-radius:20px!important;padding:40px!important;display:flex!important;flex-direction:column!important;gap:20px!important}
+.elementor .elementor-widget.o-f00ba5{align-self:flex-start!important}
+.elementor .o-f00ba5 .elementor-heading-title{background:#fff!important;color:#a0244a!important;padding:6px 14px!important;border-radius:999px!important;font-size:13px!important;font-weight:500!important;display:block!important}
+.elementor .elementor-widget.o-a14e59{font-family:'Funnel Display',sans-serif!important;font-size:28px!important;line-height:1.3!important;color:#2a1a22!important}
+.elementor .o-a14e59 p{margin:0!important}
+.elementor .e-con.o-fc9769{margin:0!important;grid-column:span 1!important;grid-row:span 2!important;border-radius:20px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex!important;flex-direction:column!important;justify-content:space-between!important;align-items:flex-start!important;padding:16px!important}
+.elementor .o-3ffa6e .elementor-heading-title{background:#fff!important;color:#a0244a!important;padding:8px 14px!important;border-radius:999px!important;font-family:'Funnel Display',sans-serif!important;font-size:17px!important;display:block!important}
+.elementor .e-con.o-9ad069{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;margin-bottom:72px!important}
+.elementor .e-con.o-92fd18{background:#d4ecf7!important;color:#173f57!important;border-radius:20px!important;padding:40px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+.elementor .elementor-widget.o-92cd2c{margin-bottom:16px!important}
+.elementor .o-92cd2c .elementor-heading-title{color:#a0244a!important;font-size:24px!important;display:block!important}
+.elementor .elementor-widget.o-446a23{font-size:30px!important;line-height:1.2!important;letter-spacing:-.015em!important;font-weight:500!important;text-wrap:balance!important}
+.elementor .o-446a23 p{margin:0!important}
+.elementor .elementor-widget.o-d5721d{font-family:'Funnel Display',sans-serif!important;font-size:28px!important;line-height:1.3!important;color:#a0244a!important}
+.elementor .o-d5721d p{margin:16px 0 0!important}
+.elementor .elementor-widget.o-7a38b0{font-size:14px!important;opacity:.65!important}
+.elementor .o-7a38b0 p{margin:20px 0 0!important}
+.elementor .e-con.o-dbf309{max-width:1320px!important;margin:0 auto!important;padding:56px 32px 48px!important}
+.elementor .elementor-widget.o-ee9538{margin:24px 0 0!important}
+.elementor .o-ee9538 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:clamp(64px,10vw,132px)!important;line-height:.9!important;overflow-wrap:anywhere!important;letter-spacing:-.045em!important;display:block!important}
+.elementor .e-con.o-2cac0b{max-width:1320px!important;margin:0 auto!important;padding:0 32px 120px!important;display:grid!important;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)!important;gap:20px!important;align-items:start!important}
+.elementor .e-con.o-172621{background:#fff!important;border:1px solid #efe3e5!important;border-radius:24px!important;padding:52px!important}
+.elementor .elementor-widget.o-c74598{margin:0 0 36px!important}
+.elementor .o-c74598 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:40px!important;letter-spacing:-.03em!important;display:block!important}
+.elementor .e-con.o-7c1ac0{display:flex!important;flex-direction:column!important;gap:20px!important}
+.elementor .e-con.o-3b64fd{background:#a0244a!important;color:#fff!important;border-radius:24px!important;padding:40px!important;display:flex!important;flex-direction:column!important;gap:24px!important}
+.elementor .elementor-widget.o-b7c205{margin:0!important}
+.elementor .o-b7c205 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:32px!important;letter-spacing:-.02em!important;display:block!important}
+.elementor .o-bf26f8 .elementor-heading-title{font-size:17px!important;line-height:1.5!important;display:block!important}
+.elementor .o-3c993e .elementor-button{font-family:'Funnel Display',sans-serif!important;font-size:48px!important;line-height:1!important;color:#f2d4d3!important;display:block!important}
+.elementor .elementor-widget.o-c72066{align-self:flex-start!important}
+.elementor .o-c72066 .elementor-button{color:#fff!important;background:rgba(255,255,255,.12)!important;padding:12px 18px!important;border-radius:999px!important;font-size:15px!important;display:block!important}
+.elementor .e-con.o-bebc7f{height:260px!important;border-radius:24px!important;background-image:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:grid!important;place-items:center!important}
+.elementor .o-5a048a .elementor-heading-title{font:500 11px 'Geist Mono',monospace!important;background:#ffffff!important;color:#76636b!important;padding:7px 12px!important;border-radius:999px!important;display:block!important}
+.elementor .e-con.o-550f1e{background:#fff!important;border:1px solid #efe3e5!important;border-radius:24px!important;padding:32px 36px!important}
+.elementor .elementor-widget.o-081774{margin:0 0 14px!important}
+.elementor .o-081774 .elementor-heading-title{font-family:'Funnel Display',sans-serif!important;font-weight:600!important;font-size:26px!important;letter-spacing:-.02em!important;display:block!important}
+.elementor .o-49b4ed .elementor-button{display:flex!important;justify-content:space-between!important;padding:12px 0!important;border-bottom:1px solid #f3e9eb!important;color:#2a1a22!important}
+.elementor .o-i-3c9390{color:#a0244a!important}
+.elementor .o-8cda06 .elementor-button{display:flex!important;justify-content:space-between!important;padding:12px 0!important;color:#2a1a22!important}
+
+/* Mobile e tablet (da responsive.css) */
+@media (max-width:900px){
+  .elementor .e-con.o-7f9161{padding-bottom:64px!important}
+  .elementor .e-con.o-73dc9b{padding-bottom:64px!important}
+  .elementor .e-con.o-2cac0b{padding-bottom:64px!important}
+  .elementor .e-con.o-78d296{padding-top:64px!important;padding-bottom:64px!important}
+  .elementor .e-con.o-73dc9b{padding-top:56px!important;padding-bottom:64px!important}
+  .elementor .e-con.o-9b74c8{padding-top:56px!important;padding-bottom:64px!important}
+  .elementor .e-con.o-dd0f35{padding-top:64px!important;padding-bottom:64px!important}
+  .elementor .e-con.o-2f1e03{padding-top:32px!important}
+  .elementor .e-con.o-dbf309{padding-top:32px!important}
+  .elementor .e-con.o-dd0f35{margin-bottom:64px!important}
+  .elementor .e-con.o-34d11a{margin-bottom:40px!important}
+  .elementor .e-con.o-038b24{margin-bottom:40px!important}
+  .elementor .e-con.o-7a68f2{margin-bottom:40px!important}
+  .elementor .e-con.o-e2f0ea{margin-bottom:40px!important}
+  .elementor .e-con.o-9ad069{margin-bottom:40px!important}
+  .elementor .o-6ec88c p{margin-bottom:40px!important}
+  .elementor .e-con.o-d5d005{margin-bottom:32px!important}
+  .elementor .o-b49143 p{margin-bottom:56px!important}
+  .elementor .elementor-widget.o-f497e6{margin-bottom:28px!important}
+  .elementor .e-con.o-eae24f{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-826999{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-33831a{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-431e5b{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-813854{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-e3c109{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-5ae02d{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-c01a5f{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-e1b315{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-73dc9b{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-8a9cc1{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-950f62{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-0db37a{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-9b74c8{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-34d11a{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-038b24{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-7a68f2{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-e2f0ea{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-9ad069{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-2cac0b{grid-template-columns:minmax(0,1fr)!important}
+  .elementor .e-con.o-22ec5f{grid-column:auto!important;grid-row:auto!important}
+  .elementor .e-con.o-52e3b3{grid-column:auto!important;grid-row:auto!important}
+  .elementor .e-con.o-15d259{grid-column:auto!important;grid-row:auto!important}
+  .elementor .e-con.o-28e540{grid-column:auto!important;grid-row:auto!important}
+  .elementor .e-con.o-a021dc{grid-column:auto!important;grid-row:auto!important}
+  .elementor .e-con.o-306936{grid-column:auto!important;grid-row:auto!important}
+  .elementor .e-con.o-fc9769{grid-column:auto!important;grid-row:auto!important}
+  .elementor .e-con.o-73dc9b{gap:32px!important}
+  .elementor .e-con.o-34d11a{gap:32px!important}
+  .elementor .e-con.o-c01a5f{gap:32px!important}
+  .elementor .e-con.o-813854{gap:32px!important}
+  .elementor .e-con.o-431e5b{grid-auto-rows:220px!important}
+  .elementor .e-con.o-038b24{grid-auto-rows:240px!important}
+  .elementor .e-con.o-ccb4f7{flex-wrap:wrap!important}
+  .elementor .e-con.o-390c9a{height:auto!important;min-height:520px!important;padding:88px 0 56px!important}
+  .elementor .e-con.o-0db37a{min-height:0!important}
+  .elementor .e-con.o-e1b315{min-height:0!important}
+  .elementor .e-con.o-0db37a > :first-child{gap:48px!important}
+  .elementor .e-con.o-0db37a > :last-child{min-height:240px!important}
+  .elementor .e-con.o-712450{height:260px!important}
+  .elementor .e-con.o-5a5652{min-height:440px!important}
+  .elementor .e-con.o-2c4a98{min-height:280px!important}
+  .elementor .e-con.o-e79bf4{max-width:240px!important;width:100%!important}
+  .elementor .e-con.o-d58737{padding:40px 20px!important}
+  .elementor .e-con.o-c01a5f{padding:32px 20px!important}
+  .elementor .e-con.o-e9f8ff{padding:32px 20px!important}
+  .elementor .e-con.o-172621{padding:28px 20px!important}
+  .elementor .elementor-widget.o-38445b{padding:28px 24px!important}
+  .elementor .e-con.o-10946e{padding:28px 24px!important}
+  .elementor .e-con.o-998706{padding:28px 24px!important}
+  .elementor .e-con.o-92fd18{padding:28px 24px!important}
+  .elementor .e-con.o-3b64fd{padding:28px 24px!important}
+  .elementor .e-con.o-e63f0a{padding:24px 20px!important}
+  .elementor .e-con.o-53d51a{padding:24px!important}
+  .elementor .e-con.o-dc3808{padding:24px!important}
+  .elementor .elementor-widget.o-38445b{margin:40px 0!important}
+  .elementor .o-bca8f3 .elementor-heading-title{font-size:44px!important}
+  .elementor .o-e2b70f .elementor-heading-title{font-size:40px!important}
+  .elementor .o-8d9fb1 .elementor-heading-title{font-size:38px!important}
+  .elementor .o-d43664 .elementor-heading-title{font-size:38px!important}
+  .elementor .o-d01c80 .elementor-heading-title{font-size:38px!important}
+  .elementor .o-8f5896 .elementor-heading-title{font-size:34px!important}
+  .elementor .o-3c993e .elementor-button{font-size:34px!important}
+  .elementor .elementor-widget.o-6ec88c{font-size:28px!important}
+  .elementor .o-db40c5 .elementor-heading-title{font-size:30px!important}
+  .elementor .o-c74598 .elementor-heading-title{font-size:30px!important}
+  .elementor .o-28b843 .elementor-heading-title{font-size:24px!important}
+  .elementor .elementor-widget.o-38445b{font-size:24px!important}
+  .elementor .elementor-widget.o-56942f{font-size:24px!important}
+  .elementor .o-b7c205 .elementor-heading-title{font-size:26px!important}
+  .elementor .elementor-widget.o-446a23{font-size:22px!important}
+  .elementor .elementor-widget.o-a14e59{font-size:21px!important}
+  .elementor .elementor-widget.o-d5721d{font-size:21px!important}
+  .elementor .elementor-widget.o-52c2a2{font-size:21px!important}
+  .elementor .o-081774 .elementor-heading-title{font-size:21px!important}
+  .elementor .o-748e95 .elementor-heading-title{font-size:40px!important}
+  .elementor .o-f497e6 .elementor-heading-title{font-size:56px!important}
+  .elementor .o-ee9538 .elementor-heading-title{font-size:56px!important}
+  .elementor .e-con.o-ddbcff{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-78d296{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-7f9161{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-dd0f35{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-2f1e03{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-73dc9b{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-64b580{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-9b74c8{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-dbf309{padding-left:16px!important;padding-right:16px!important}
+  .elementor .e-con.o-2cac0b{padding-left:16px!important;padding-right:16px!important}
+}
+@media (max-width:480px){
+  .elementor .o-f497e6 .elementor-heading-title{font-size:46px!important}
+  .elementor .o-ee9538 .elementor-heading-title{font-size:46px!important}
+  .elementor .o-92eeab .elementor-heading-title{font-size:40px!important}
+  .elementor .o-bca8f3 .elementor-heading-title{font-size:38px!important}
+  .elementor .elementor-widget.o-c1ad3a{font-size:18px!important}
+}

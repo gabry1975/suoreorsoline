@@ -7,10 +7,11 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORSOLINE_VERSION', '1.2.1');
+define('ORSOLINE_VERSION', '2.0.0');
 
 require_once __DIR__ . '/inc/data.php';
 require_once __DIR__ . '/inc/contact-form.php';
+require_once __DIR__ . '/inc/shortcodes.php';
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
@@ -23,8 +24,22 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('orsoline-fonts', $uri . '/assets/css/fonts.css', [], ORSOLINE_VERSION);
     wp_enqueue_style('orsoline', get_stylesheet_uri(), ['orsoline-fonts'], ORSOLINE_VERSION);
     wp_enqueue_style('orsoline-responsive', $uri . '/assets/css/responsive.css', ['orsoline'], ORSOLINE_VERSION);
+    // Stile dei blocchi Elementor (generato da tools/elementor/genera.py): dopo il CSS di Elementor.
+    $deps = wp_style_is('elementor-frontend', 'registered') ? ['orsoline-responsive', 'elementor-frontend'] : ['orsoline-responsive'];
+    wp_enqueue_style('orsoline-elementor', $uri . '/assets/css/elementor.css', $deps, ORSOLINE_VERSION);
     wp_enqueue_script('orsoline', $uri . '/assets/js/main.js', [], ORSOLINE_VERSION, true);
-});
+}, 20);
+
+/** La pagina è costruita con Elementor? */
+function orsoline_is_elementor_page($id = null)
+{
+    $id = $id ?: get_queried_object_id();
+    if (!$id || !did_action('elementor/loaded')) {
+        return false;
+    }
+    $doc = \Elementor\Plugin::$instance->documents->get($id);
+    return $doc && $doc->is_built_with_elementor();
+}
 
 add_action('wp_head', function () {
     $dir = get_template_directory_uri() . '/assets/fonts/';
@@ -34,9 +49,16 @@ add_action('wp_head', function () {
 }, 1);
 
 /**
- * Le pagine degli spazi del Collegio usano tutte lo stesso template.
+ * Pagine costruite con Elementor: template-elementor.php (header/footer del tema + contenuto Elementor).
+ * Altrimenti i template PHP del tema; gli spazi del Collegio usano tutti template-spazio.php.
  */
 add_filter('template_include', function ($template) {
+    if ((is_page() || is_front_page()) && orsoline_is_elementor_page()) {
+        $t = locate_template('template-elementor.php');
+        if ($t) {
+            return $t;
+        }
+    }
     if (is_page() && orsoline_spazio(get_post_field('post_name', get_queried_object_id()))) {
         $t = locate_template('template-spazio.php');
         if ($t) {

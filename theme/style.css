@@ -19,17 +19,18 @@ input,textarea{font:inherit}
 a.lk,a.lk:hover{color:inherit;text-decoration:none}
 button.lk{font:inherit;color:inherit;background:none;border:0;margin:0;text-align:inherit;-webkit-appearance:none;appearance:none}
 
-/* Hover del mockup (style-hover) */
-.hv-sky:hover{background:#e3f2fa!important}
-.hv-pink:hover{background:#f8e7e6!important}
-.hv-rose:hover{background:#f2d4d3!important}
-.hv-white:hover{background:#fff!important}
-.hv-wine:hover{background:#7d1a39!important}
-.hv-fill:hover{background:#a0244a!important;color:#fff!important}
-.hv-border:hover{border-color:#a0244a!important}
-.hv-text:hover{color:#a0244a!important}
-.hv-textw:hover{color:#fff!important}
-.hv-lift:hover{transform:translateY(-4px)}
+/* Hover del mockup (style-hover). Valgono per gli elementi del tema e per i blocchi Elementor
+   (contenitori-link e widget Bottone con la classe hv-*). */
+.hv-sky:not(.elementor-widget):hover,.elementor .e-con.hv-sky:hover,.elementor .hv-sky .elementor-button:hover{background:#e3f2fa!important}
+.hv-pink:not(.elementor-widget):hover,.elementor .e-con.hv-pink:hover,.elementor .hv-pink .elementor-button:hover{background:#f8e7e6!important}
+.hv-rose:not(.elementor-widget):hover,.elementor .e-con.hv-rose:hover,.elementor .hv-rose .elementor-button:hover{background:#f2d4d3!important}
+.hv-white:not(.elementor-widget):hover,.elementor .e-con.hv-white:hover,.elementor .hv-white .elementor-button:hover{background:#fff!important}
+.hv-wine:not(.elementor-widget):hover,.elementor .e-con.hv-wine:hover,.elementor .hv-wine .elementor-button:hover{background:#7d1a39!important}
+.hv-fill:not(.elementor-widget):hover,.elementor .e-con.hv-fill:hover,.elementor .hv-fill .elementor-button:hover{background:#a0244a!important;color:#fff!important}
+.hv-border:not(.elementor-widget):hover,.elementor .e-con.hv-border:hover,.elementor .hv-border .elementor-button:hover{border-color:#a0244a!important}
+.hv-text:not(.elementor-widget):hover,.elementor .e-con.hv-text:hover,.elementor .hv-text .elementor-button:hover{color:#a0244a!important}
+.hv-textw:not(.elementor-widget):hover,.elementor .e-con.hv-textw:hover,.elementor .hv-textw .elementor-button:hover{color:#fff!important}
+.hv-lift:not(.elementor-widget):hover,.elementor .e-con.hv-lift:hover{transform:translateY(-4px)!important}
 
 /* Menu "Il Collegio": si apre al passaggio del mouse, come nel mockup */
 .dd-menu{display:none}

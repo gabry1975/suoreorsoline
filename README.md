@@ -40,7 +40,7 @@ come riserva per una pagina che non sia costruita con Elementor.
 Ricostruzione fedele del mockup realizzato con Claude Design (https://claude.ai/artifact/HdE1bXBLmAYZaxEgauUDwq).
 **Il desktop deve restare uguale al mockup.**
 
-- Colore di base `#a0244a` (prugna, come nel mockup); sfondi rosa `#f8e7e6` e `#f2d4d3` (tonalità dal sito delle Orsoline di Parma).
+- Colore principale `#b04a5a` (rosa antico; nel mockup era `#a0244a`), passaggio del mouse sui bottoni `#c18a8a`; sfondi rosa `#f8e7e6` e `#f2d4d3` (tonalità dal sito delle Orsoline di Parma).
 - Chi Siamo e spazi del Collegio hanno il menu laterale del secondo mockup (https://claude.ai/artifact/AHtzkU1gmbHm1ZPiDTKbzv), con lo stile del sito.
 - Form Contatti: `inc/contact-form.php` (email all'indirizzo amministratore di WordPress).
 - Mobile/tablet: `assets/css/responsive.css` per header/footer e parti del tema, `assets/css/elementor.css` per i blocchi delle pagine

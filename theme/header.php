@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 $sec = orsoline_current_section();
-$nb = function ($k) use ($sec) { return $sec === $k ? '#fcecef' : 'transparent'; };
+$nb = function ($k) use ($sec) { return $sec === $k ? '#f8e7e6' : 'transparent'; };
 $nf = function ($k) use ($sec) { return $sec === $k ? '#a0244a' : '#2a1a22'; };
 $logo = get_template_directory_uri() . '/assets/img/logo.png';
 ?><!DOCTYPE html>

@@ -14,7 +14,7 @@ get_header();
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(90,20,45,.15) 0%,rgba(90,20,45,.55) 100%)"></div>
         <div style="position:relative;max-width:900px;padding:0 32px;color:#fff;display:flex;flex-direction:column;align-items:center">
           <span style="background:rgba(255,255,255,.18);backdrop-filter:blur(8px);padding:8px 16px;border-radius:999px;font-size:14px;font-weight:500;margin-bottom:28px">Collegio Universitario Femminile · Milano</span>
-          <h1 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(48px,6.4vw,96px);line-height:.95;letter-spacing:-.04em;margin:0 0 24px;text-wrap:balance">“Orsoline Missionarie <span style="font-weight:300;color:#f7d9df">del Sacro Cuore</span>”</h1>
+          <h1 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(48px,6.4vw,96px);line-height:.95;letter-spacing:-.04em;margin:0 0 24px;text-wrap:balance">“Orsoline Missionarie <span style="font-weight:300;color:#f2d4d3">del Sacro Cuore</span>”</h1>
           <p style="font-size:20px;margin:0 0 36px;color:#fbeef1">Convenzionato con l’Università Cattolica del Sacro Cuore.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
             <a class="lk hv-pink" href="<?php echo esc_url(orsoline_url('chi-siamo')); ?>" style="cursor:pointer;background:#fff;color:#a0244a;padding:16px 28px;border-radius:999px;font-weight:600;white-space:nowrap">Il Collegio →</a>
@@ -45,7 +45,7 @@ get_header();
     </section>
 
     <section style="max-width:1320px;margin:0 auto;padding:0 32px 120px">
-      <div style="background:#fcecef;border-radius:24px;padding:80px 72px">
+      <div style="background:#f8e7e6;border-radius:24px;padding:80px 72px">
         <div style="display:flex;flex-direction:column;align-items:center;text-align:center;max-width:820px;margin:0 auto 64px;gap:20px">
           <div style="display:flex;gap:10px;align-items:center"><span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#a0244a">Accoglienza</span><?php orsoline_new_badge(); ?></div>
           <h2 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(40px,4.6vw,64px);line-height:1;letter-spacing:-.035em;margin:0;text-wrap:balance">Una casa, <span style="font-weight:300;color:#a0244a">non solo un posto letto</span></h2>
@@ -118,15 +118,15 @@ get_header();
         </div>
         <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px">
           <figure style="margin:0;background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:32px">
-          <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'Funnel Display',sans-serif;font-size:56px;line-height:.6;color:#f7d9df">“</span><blockquote style="margin:0;font-size:18px;line-height:1.55;color:#3a2a31">Sono arrivata da fuori regione senza conoscere nessuno: dopo una settimana avevo già trovato le mie compagne di studio. La cucina condivisa è il posto dove sono nate le amicizie più belle.</blockquote></div>
+          <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'Funnel Display',sans-serif;font-size:56px;line-height:.6;color:#f2d4d3">“</span><blockquote style="margin:0;font-size:18px;line-height:1.55;color:#3a2a31">Sono arrivata da fuori regione senza conoscere nessuno: dopo una settimana avevo già trovato le mie compagne di studio. La cucina condivisa è il posto dove sono nate le amicizie più belle.</blockquote></div>
           <figcaption style="display:flex;align-items:center;gap:14px"><span style="width:48px;height:48px;flex:none;border-radius:50%;background:repeating-linear-gradient(135deg,#dcedf6 0 6px,#d1e6f1 6px 12px)"></span><span><span style="display:block;font-weight:600">Giulia</span><span style="display:block;font-size:14px;color:#86737a">Università Cattolica · 3° anno</span></span></figcaption>
         </figure>
           <figure style="margin:0;background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:32px">
-          <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'Funnel Display',sans-serif;font-size:56px;line-height:.6;color:#f7d9df">“</span><blockquote style="margin:0;font-size:18px;line-height:1.55;color:#3a2a31">La posizione è perfetta: con la metro sono in università in pochi minuti e la stazione Centrale è vicinissima quando torno a casa nel weekend. La sala studio è silenziosa anche sotto esame.</blockquote></div>
+          <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'Funnel Display',sans-serif;font-size:56px;line-height:.6;color:#f2d4d3">“</span><blockquote style="margin:0;font-size:18px;line-height:1.55;color:#3a2a31">La posizione è perfetta: con la metro sono in università in pochi minuti e la stazione Centrale è vicinissima quando torno a casa nel weekend. La sala studio è silenziosa anche sotto esame.</blockquote></div>
           <figcaption style="display:flex;align-items:center;gap:14px"><span style="width:48px;height:48px;flex:none;border-radius:50%;background:repeating-linear-gradient(135deg,#dcedf6 0 6px,#d1e6f1 6px 12px)"></span><span><span style="display:block;font-weight:600">Sofia</span><span style="display:block;font-size:14px;color:#86737a">Politecnico · 2° anno</span></span></figcaption>
         </figure>
           <figure style="margin:0;background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:32px">
-          <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'Funnel Display',sans-serif;font-size:56px;line-height:.6;color:#f7d9df">“</span><blockquote style="margin:0;font-size:18px;line-height:1.55;color:#3a2a31">Mi sono sentita accolta fin dal primo giorno. Le Suore sono sempre disponibili e l’ambiente è sereno: per i miei genitori è stato importante sapermi in un posto sicuro.</blockquote></div>
+          <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'Funnel Display',sans-serif;font-size:56px;line-height:.6;color:#f2d4d3">“</span><blockquote style="margin:0;font-size:18px;line-height:1.55;color:#3a2a31">Mi sono sentita accolta fin dal primo giorno. Le Suore sono sempre disponibili e l’ambiente è sereno: per i miei genitori è stato importante sapermi in un posto sicuro.</blockquote></div>
           <figcaption style="display:flex;align-items:center;gap:14px"><span style="width:48px;height:48px;flex:none;border-radius:50%;background:repeating-linear-gradient(135deg,#dcedf6 0 6px,#d1e6f1 6px 12px)"></span><span><span style="display:block;font-weight:600">Amina</span><span style="display:block;font-size:14px;color:#86737a">Università Statale · 1° anno</span></span></figcaption>
         </figure>
         </div>
@@ -134,7 +134,7 @@ get_header();
       </div>
     </section>
     <section style="max-width:1320px;margin:0 auto;padding:0 32px 120px">
-      <div style="background:#fcecef;border-radius:24px;padding:72px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:center">
+      <div style="background:#f8e7e6;border-radius:24px;padding:72px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:center">
         <div>
           <span style="background:#fff;color:#a0244a;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:500">Dal 1884 a Milano</span>
           <h2 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:72px;line-height:.95;letter-spacing:-.035em;margin:24px 0 28px">Vieni a <span style="font-weight:300;color:#a0244a">trovarci</span></h2>
@@ -175,7 +175,7 @@ get_header();
             <a href="https://maps.google.com/?q=Via+Adele+Martignoni+8+Milano" target="_blank" style="flex:none;background:#a0244a;color:#fff;padding:12px 18px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap">Apri in Maps ↗</a>
           </div>
         </div>
-        <div style="background:#fcecef;border-radius:24px;padding:12px;display:flex;flex-direction:column;gap:12px">
+        <div style="background:#f8e7e6;border-radius:24px;padding:12px;display:flex;flex-direction:column;gap:12px">
           <div style="flex:1;min-height:240px;border-radius:16px;background:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:flex;align-items:flex-end;padding:12px"><span style="font:500 10px 'Geist Mono',monospace;background:#fff;color:#76636b;padding:5px 9px;border-radius:999px">IMMAGINE · Ingresso del Collegio</span></div>
           <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:20px">
             <div>

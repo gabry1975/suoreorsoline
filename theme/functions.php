@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORSOLINE_VERSION', '1.1.0');
+define('ORSOLINE_VERSION', '1.2.1');
 
 require_once __DIR__ . '/inc/data.php';
 require_once __DIR__ . '/inc/contact-form.php';

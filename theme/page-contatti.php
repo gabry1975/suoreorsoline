@@ -19,7 +19,7 @@ get_header();
         <h2 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:40px;letter-spacing:-.03em;margin:0 0 36px">Scrivici</h2>
         <?php if ($sent) : ?>
           <div style="padding:48px 0;display:flex;flex-direction:column;gap:16px;align-items:flex-start">
-            <div style="width:64px;height:64px;border-radius:50%;background:#f7d9df;color:#a0244a;display:grid;place-items:center;font-size:28px">✓</div>
+            <div style="width:64px;height:64px;border-radius:50%;background:#f2d4d3;color:#a0244a;display:grid;place-items:center;font-size:28px">✓</div>
             <div style="font-family:'Funnel Display',sans-serif;font-size:40px;line-height:1.1">Grazie, messaggio inviato.</div>
             <a class="lk" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;color:#a0244a;text-decoration:underline;font-size:15px">Invia un altro messaggio</a>
           </div>
@@ -55,7 +55,7 @@ get_header();
         <div style="background:#a0244a;color:#fff;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:24px">
           <h2 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:32px;letter-spacing:-.02em;margin:0">Contatti</h2>
           <div style="font-size:17px;line-height:1.5">Via Adele Martignoni, 8<br>20124 Milano (MI)<br>Italia</div>
-          <a href="tel:026688999" style="font-family:'Funnel Display',sans-serif;font-size:48px;line-height:1;color:#f7d9df">02/6688999</a>
+          <a href="tel:026688999" style="font-family:'Funnel Display',sans-serif;font-size:48px;line-height:1;color:#f2d4d3">02/6688999</a>
           <a href="mailto:amministrazione.omscmi@gmail.com" style="color:#fff;background:rgba(255,255,255,.12);padding:12px 18px;border-radius:999px;font-size:15px;align-self:flex-start">amministrazione.omscmi@gmail.com</a>
         </div>
         <div style="height:260px;border-radius:24px;background:repeating-linear-gradient(135deg,#f3e7ea 0 14px,#ebdde1 14px 28px);display:grid;place-items:center">

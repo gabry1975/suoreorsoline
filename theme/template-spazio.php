@@ -23,7 +23,7 @@ get_header();
         <div style="background:#a0244a;color:#fff;border-radius:24px;padding:48px;display:flex;flex-direction:column;justify-content:space-between">
           <div style="font-size:14px;opacity:.8;display:flex;gap:8px"><a class="lk" href="<?php echo esc_url(orsoline_url()); ?>" style="cursor:pointer">Home</a><span>/</span><span>Il Collegio</span></div>
           <div>
-            <div style="width:56px;height:4px;border-radius:2px;background:#f7d9df;margin-bottom:28px"></div>
+            <div style="width:56px;height:4px;border-radius:2px;background:#f2d4d3;margin-bottom:28px"></div>
             <h1 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:clamp(52px,6vw,84px);overflow-wrap:anywhere;line-height:.98;letter-spacing:-.035em;margin:0;text-wrap:balance"><?php echo esc_html($sub['title']); ?></h1>
           </div>
         </div>

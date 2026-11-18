@@ -1,10 +1,10 @@
 # Scarica dal server SiteGround le cartelle versionate nel repo.
 # Uso:  .\sync-from-server.ps1
-# Il tema non e' ancora definito: impostare $themeSlug quando sara' pronto.
+# Tema: orsoline (cartella theme/).
 $ErrorActionPreference = "Stop"
 $hostAlias = "suoreorsoline"
 $wp = "www/mindlyc38.sg-host.com/public_html/wp-content"
-$themeSlug = "hello-elementor-child"
+$themeSlug = "orsoline"
 $map = @{ "mu-plugins" = "$wp/mu-plugins" }
 if ($themeSlug) { $map["theme"] = "$wp/themes/$themeSlug" }
 foreach ($local in $map.Keys) {

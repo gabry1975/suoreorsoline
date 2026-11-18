@@ -11,7 +11,7 @@ License: GNU General Public License v2 or later
 body{margin:0;background:#fbf8f7;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
 a{color:#a0244a;text-decoration:none}
-a:hover{color:#7d1a39;text-decoration:underline}
+a:hover{color:#c18a8a;text-decoration:underline}
 input,textarea{font:inherit}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
@@ -25,7 +25,7 @@ button.lk{font:inherit;color:inherit;background:none;border:0;margin:0;text-alig
 .hv-pink:not(.elementor-widget):hover,.elementor .e-con.hv-pink:hover,.elementor .hv-pink .elementor-button:hover{background:#f8e7e6!important}
 .hv-rose:not(.elementor-widget):hover,.elementor .e-con.hv-rose:hover,.elementor .hv-rose .elementor-button:hover{background:#f2d4d3!important}
 .hv-white:not(.elementor-widget):hover,.elementor .e-con.hv-white:hover,.elementor .hv-white .elementor-button:hover{background:#fff!important}
-.hv-wine:not(.elementor-widget):hover,.elementor .e-con.hv-wine:hover,.elementor .hv-wine .elementor-button:hover{background:#7d1a39!important}
+.hv-wine:not(.elementor-widget):hover,.elementor .e-con.hv-wine:hover,.elementor .hv-wine .elementor-button:hover{background:#c18a8a!important}
 .hv-fill:not(.elementor-widget):hover,.elementor .e-con.hv-fill:hover,.elementor .hv-fill .elementor-button:hover{background:#a0244a!important;color:#fff!important}
 .hv-border:not(.elementor-widget):hover,.elementor .e-con.hv-border:hover,.elementor .hv-border .elementor-button:hover{border-color:#a0244a!important}
 .hv-text:not(.elementor-widget):hover,.elementor .e-con.hv-text:hover,.elementor .hv-text .elementor-button:hover{color:#a0244a!important}
@@ -49,7 +49,7 @@ button.lk{font:inherit;color:inherit;background:none;border:0;margin:0;text-alig
   box-shadow:0 14px 30px -12px rgba(90,20,45,.55);opacity:0;visibility:hidden;transform:translateY(12px);
   transition:opacity .25s ease,transform .25s ease,visibility .25s ease,background .2s ease,bottom .2s ease;-webkit-tap-highlight-color:transparent}
 .to-top.is-visible{opacity:1;visibility:visible;transform:none}
-.to-top:hover{background:#7d1a39}
+.to-top:hover{background:#c18a8a}
 .to-top:focus-visible{outline:2px solid #a0244a;outline-offset:3px}
 @media (max-width:900px){.to-top{right:16px;bottom:calc(16px + var(--top-offset,0px));width:48px;height:48px}}
 @media print{.to-top{display:none}}

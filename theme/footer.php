@@ -15,7 +15,7 @@ if ($sec === 'sub') {
   <div style="max-width:1320px;margin:0 auto;background:#a0244a;color:#fbeef1;border-radius:24px;padding:64px 64px 32px">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.12)">
       <div style="font-weight:600;font-size:clamp(48px,6.5vw,88px);line-height:.9;letter-spacing:-.045em">Vieni a <span style="font-weight:300;color:#f2d4d3">trovarci</span></div>
-      <a class="lk hv-white" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;background:#f2d4d3;color:#7d1a39;padding:18px 30px;border-radius:999px;font-weight:600">Richiesta Informazioni →</a>
+      <a class="lk hv-white" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;background:#f2d4d3;color:#c18a8a;padding:18px 30px;border-radius:999px;font-weight:600">Richiesta Informazioni →</a>
     </div>
     <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;padding:48px 0;font-size:15px;line-height:1.7">
       <div><div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#f2d4d3;margin-bottom:14px">Contatti</div>Via Adele Martignoni, 8<br>20124 Milano (MI)<br><br>Chiamaci: 02 66 88 999<br>Email: amministrazione.omscmi@gmail.com</div>

@@ -104,11 +104,8 @@
   [style*="clamp(52px,6vw,84px)"]{font-size:40px!important}
   [style*="clamp(64px,10vw,132px)"]{font-size:56px!important}
 
-  /* Chi Siamo: linea storica su due colonne, indice orizzontale */
-  .tl{grid-template-columns:repeat(2,minmax(0,1fr))!important;row-gap:28px}
-  .tl-line{display:none}
-  .cs-aside{position:static!important;flex-direction:row!important;flex-wrap:wrap}
-  .cs-aside > div:first-child{width:100%}
+  /* Menu laterali di Chi Siamo e degli spazi: sopra il testo, non più fissi */
+  .cs-aside,.sp-aside{position:static!important}
 
   /* Banner cookie a tutta larghezza */
   #orsoline-cookie{left:12px!important;right:12px!important;bottom:12px!important;max-width:none!important}

@@ -15,26 +15,22 @@ get_header();
         <span style="font:500 11px 'Geist Mono',monospace;background:#ffffff;color:#76636b;padding:7px 12px;border-radius:999px">IMMAGINE · Foto d’archivio storico dell’Istituto — 2600×920</span>
       </div>
     </section>
-    <section style="max-width:1320px;margin:0 auto;padding:56px 32px 0">
-      <div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#a0244a;margin-bottom:28px">Linea storica</div>
-      <div class="tl" style="position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr))">
-        <div class="tl-line" style="position:absolute;left:0;right:0;top:57px;height:1px;background:#d9c3c9"></div>
-        <?php
-        $tl = [['1575', 'Parma', 'cs-1575'], ['1591', 'Maddalena Molinari', 'cs-1591'], ['1623', 'Vittoria Masi', 'cs-1623'], ['1884', 'Milano', 'cs-1884'], ['1898', 'Madre Zileri dal Verme', 'cs-1898'], ['1926', 'La prima missione in Cina', 'cs-1926'], ['1987', 'Nuovo Collegio Universitario', 'cs-1987']];
-        foreach ($tl as [$y, $t, $id]) : ?>
-          <a class="lk hv-text" href="#<?php echo $id; ?>" data-jump style="cursor:pointer;position:relative;display:flex;flex-direction:column;gap:0;padding-right:16px">
-            <span style="font-family:'Funnel Display',sans-serif;font-weight:500;font-size:34px;line-height:1;letter-spacing:-.02em;color:#a0244a;height:44px"><?php echo $y; ?></span>
-            <span style="width:11px;height:11px;border-radius:50%;background:#a0244a;box-shadow:0 0 0 5px #fbf8f7;margin:8px 0 18px"></span>
-            <span style="font-size:14px;line-height:1.35;color:#5a4850"><?php echo esc_html($t); ?></span>
-          </a>
-        <?php endforeach; ?>
-      </div>
-    </section>
     <section style="max-width:1320px;margin:0 auto;padding:96px 32px 120px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:80px">
-      <aside class="cs-aside" style="position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:8px">
-        <div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#86737a;margin-bottom:6px">In questa pagina</div>
-        <a class="lk hv-fill" href="#cs-storia" data-jump style="cursor:pointer;background:#e3f2fa;color:#a0244a;padding:12px 18px;border-radius:999px;font-weight:500">…dalla storia</a>
-        <a class="lk hv-fill" href="#cs-milano" data-jump style="cursor:pointer;background:#e3f2fa;color:#a0244a;padding:12px 18px;border-radius:999px;font-weight:500">…a Milano</a>
+      <?php /* Menu laterale: struttura del secondo mockup (indice + linea storica verticale), stile del sito. */ ?>
+      <aside class="cs-aside" style="position:sticky;top:120px;align-self:start">
+        <div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#86737a;margin-bottom:16px">In questa pagina</div>
+        <a class="lk hv-text" href="#cs-storia" data-jump style="display:block;cursor:pointer;font-weight:500;padding:8px 0">…dalla storia</a>
+        <a class="lk hv-text" href="#cs-milano" data-jump style="display:block;cursor:pointer;font-weight:500;padding:8px 0;margin-bottom:28px">…a Milano</a>
+        <div style="border-left:1px solid #e6d6da;display:flex;flex-direction:column">
+          <?php
+          $tl = [['1575', 'Parma', 'cs-1575'], ['1591', 'Maddalena Molinari', 'cs-1591'], ['1623', 'Vittoria Masi', 'cs-1623'], ['1898', 'Madre Zileri dal Verme', 'cs-1898'], ['1926', 'La prima missione in Cina', 'cs-1926'], ['1884', 'Milano', 'cs-1884'], ['1987', 'Nuovo Collegio Universitario', 'cs-1987']];
+          foreach ($tl as [$y, $t, $id]) : ?>
+          <a class="lk hv-text" href="#<?php echo $id; ?>" data-jump style="display:block;cursor:pointer;padding:7px 0 7px 18px;position:relative;font-size:14px;line-height:1.45;color:#5a4850">
+            <span style="position:absolute;left:-4px;top:14px;width:7px;height:7px;border-radius:50%;background:#a0244a"></span>
+            <span style="font:500 12px 'Geist Mono',monospace;color:#a0244a;margin-right:10px"><?php echo $y; ?></span><?php echo esc_html($t); ?>
+          </a>
+          <?php endforeach; ?>
+        </div>
       </aside>
       <article style="max-width:760px;font-size:19px;line-height:1.7;color:#3a2a31">
         <h2 id="cs-storia" style="font-weight:600;font-size:48px;line-height:1.05;letter-spacing:-.03em;margin:0 0 36px;color:#2a1a22">Orsoline Missionarie del Sacro Cuore… <span style="font-weight:300;color:#a0244a">dalla storia</span></h2>

@@ -19,12 +19,7 @@ get_header();
 ?>
   <main>
     <section style="max-width:1320px;margin:0 auto;padding:40px 32px 0">
-      <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px">
-        <?php foreach ($spazi as $s) : $on = $s['slug'] === $sub['slug']; ?>
-          <a class="lk hv-border" href="<?php echo esc_url(orsoline_url($s['slug'])); ?>" style="cursor:pointer;flex:none;padding:10px 18px;border-radius:999px;font-size:14px;font-weight:500;background:<?php echo $on ? '#a0244a' : '#fff'; ?>;color:<?php echo $on ? '#fff' : '#2a1a22'; ?>;border:1px solid <?php echo $on ? '#a0244a' : '#efe3e5'; ?>"><?php echo esc_html($s['title']); ?></a>
-        <?php endforeach; ?>
-      </div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:20px;margin-top:28px;min-height:520px">
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:20px;min-height:520px">
         <div style="background:#a0244a;color:#fff;border-radius:24px;padding:48px;display:flex;flex-direction:column;justify-content:space-between">
           <div style="font-size:14px;opacity:.8;display:flex;gap:8px"><a class="lk" href="<?php echo esc_url(orsoline_url()); ?>" style="cursor:pointer">Home</a><span>/</span><span>Il Collegio</span></div>
           <div>
@@ -37,7 +32,18 @@ get_header();
         </div>
       </div>
     </section>
-    <section style="max-width:1320px;margin:0 auto;padding:88px 32px 100px">
+    <section style="max-width:1320px;margin:0 auto;padding:88px 32px 100px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:72px">
+      <?php /* Menu laterale degli spazi: struttura del secondo mockup, stile del sito. */ ?>
+      <aside class="sp-aside" style="position:sticky;top:120px;align-self:start">
+        <div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#86737a;margin-bottom:12px">Il Collegio</div>
+        <?php foreach ($spazi as $i => $s) : $on = $s['slug'] === $sub['slug']; ?>
+        <a class="lk hv-text" href="<?php echo esc_url(orsoline_url($s['slug'])); ?>"<?php echo $on ? ' aria-current="page"' : ''; ?> style="cursor:pointer;display:flex;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid #efe3e5">
+          <span style="font:500 11px 'Geist Mono',monospace;color:#b4979f"><?php echo str_pad((string) ($i + 1), 2, '0', STR_PAD_LEFT); ?></span>
+          <span style="<?php echo $on ? 'font-weight:600;color:#a0244a' : ''; ?>"><?php echo esc_html($s['title']); ?></span>
+        </a>
+        <?php endforeach; ?>
+      </aside>
+      <div style="min-width:0">
       <?php if (!empty($sub['missing'])) : ?>
         <div style="border:1.5px dashed #c99aa6;background:#fff;border-radius:24px;padding:28px 32px;margin-bottom:48px;max-width:860px;font:14px/1.6 'Geist Mono',monospace;color:#76636b">[ TESTO DA RIPORTARE INVARIATO DAL SITO ATTUALE — pagina /<?php echo esc_html($sub['slug']); ?>/ ]</div>
       <?php endif; ?>
@@ -51,9 +57,9 @@ get_header();
       </div>
       <?php if (!empty($sub['showHours'])) : ?>
         <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:72px">
-          <div style="background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:28px"><div style="background:#e3f2fa;color:#a0244a;display:inline-block;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;margin-bottom:24px">giorni feriali</div><div style="font-family:'Funnel Display',sans-serif;font-size:52px;line-height:1">7:00 – 24:00</div></div>
-          <div style="background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:28px"><div style="background:#e3f2fa;color:#a0244a;display:inline-block;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;margin-bottom:24px">sabato</div><div style="font-family:'Funnel Display',sans-serif;font-size:52px;line-height:1">7:00 – 1:00</div></div>
-          <div style="background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:28px"><div style="background:#e3f2fa;color:#a0244a;display:inline-block;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;margin-bottom:24px">giorni festivi</div><div style="font-family:'Funnel Display',sans-serif;font-size:52px;line-height:1">8:00 – 24:00</div></div>
+          <div style="background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:28px"><div style="background:#e3f2fa;color:#a0244a;display:inline-block;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;margin-bottom:24px">giorni feriali</div><div style="font-family:'Funnel Display',sans-serif;font-size:40px;line-height:1">7:00 – 24:00</div></div>
+          <div style="background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:28px"><div style="background:#e3f2fa;color:#a0244a;display:inline-block;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;margin-bottom:24px">sabato</div><div style="font-family:'Funnel Display',sans-serif;font-size:40px;line-height:1">7:00 – 1:00</div></div>
+          <div style="background:#fff;border:1px solid #efe3e5;border-radius:20px;padding:28px"><div style="background:#e3f2fa;color:#a0244a;display:inline-block;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;margin-bottom:24px">giorni festivi</div><div style="font-family:'Funnel Display',sans-serif;font-size:40px;line-height:1">8:00 – 24:00</div></div>
         </div>
       <?php endif; ?>
       <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:300px;gap:16px;margin-bottom:72px">
@@ -89,6 +95,7 @@ get_header();
           <div><div style="font:500 11px 'Geist Mono',monospace;color:#86737a">SUCCESSIVO</div><div style="font-weight:600;font-size:20px"><?php echo esc_html($next['title']); ?></div></div>
           <span style="width:44px;height:44px;border-radius:50%;background:#a0244a;color:#fff;display:grid;place-items:center">→</span>
         </a>
+      </div>
       </div>
     </section>
     <section style="max-width:1320px;margin:0 auto;padding:0 32px 120px">

@@ -20,8 +20,12 @@
     max-height:calc(100vh - 120px);overflow-y:auto;font-size:17px!important}
   .nav-open .site-nav{display:flex!important}
   .site-nav > a,.site-nav .dd > div:first-child{padding:13px 18px!important}
-  .site-nav .dd > div:first-child span{display:none}
-  .site-nav .dd-menu{display:block!important;position:static!important;transform:none!important;padding:0!important}
+  /* "Il Collegio" a fisarmonica: sottovoci chiuse, si aprono toccando la voce (main.js aggiunge .is-open) */
+  .site-nav .dd > div:first-child{justify-content:space-between}
+  .site-nav .dd > div:first-child span{display:inline-block;font-size:11px!important;transition:transform .2s ease}
+  .site-nav .dd.is-open > div:first-child span{transform:rotate(180deg)}
+  .site-nav .dd-menu{display:none!important;position:static!important;transform:none!important;padding:0!important}
+  .site-nav .dd.is-open .dd-menu{display:block!important}
   .site-nav .dd-menu > div{width:auto!important;border:0!important;box-shadow:none!important;padding:0 0 4px 12px!important;grid-template-columns:minmax(0,1fr)!important;gap:2px!important}
   .site-nav .dd-menu a{padding:6px 8px!important}
   .site-nav .dd-menu a > div:first-child{width:40px!important;height:40px!important;border-radius:12px!important}

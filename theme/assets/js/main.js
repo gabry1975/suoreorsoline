@@ -22,6 +22,30 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && header.classList.contains('nav-open')) toggle.click();
     });
+
+    // Nel menu a hamburger "Il Collegio" si apre/chiude al tocco (sottovoci chiuse all'inizio).
+    var dd = header.querySelector('.site-nav .dd');
+    var ddLabel = dd ? dd.querySelector(':scope > div:first-child') : null;
+    if (dd && ddLabel) {
+      var isMobile = function () { return window.getComputedStyle(toggle).display !== 'none'; };
+      ddLabel.setAttribute('role', 'button');
+      ddLabel.setAttribute('aria-expanded', 'false');
+      var flip = function () {
+        if (!isMobile()) return;
+        var open = dd.classList.toggle('is-open');
+        ddLabel.setAttribute('aria-expanded', open ? 'true' : 'false');
+      };
+      ddLabel.addEventListener('click', flip);
+      ddLabel.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); }
+      });
+      toggle.addEventListener('click', function () {
+        if (!header.classList.contains('nav-open')) {
+          dd.classList.remove('is-open');
+          ddLabel.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
   }
 
   // Banner cookie: visibile finché non si preme "Ok".

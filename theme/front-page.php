@@ -147,7 +147,7 @@ get_header();
           </div>
           <p style="margin:0 0 28px;font-size:16px;color:#5a4850">Per una più completa comprensione della vita al Collegio, si rimanda all’attenta lettura del «Regolamento» che dovrà essere accettato e firmato da ogni Studentessa che liberamente accetterà di farne parte.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a href="https://www.collegioorsolinesacrocuoremilano.it/wp-content/uploads/2025/06/regolamento_2025_26.pdf" target="_blank" style="background:#a0244a;color:#fff;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none">Scarica il Regolamento ↓</a>
+            <a href="<?php echo esc_url(home_url("/wp-content/uploads/2026/11/regolamento_2025_26.pdf")); ?>" target="_blank" style="background:#a0244a;color:#fff;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none">Scarica il Regolamento ↓</a>
             <a class="lk hv-pink" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;border:1px solid #a0244a;color:#a0244a;padding:13px 22px;border-radius:999px;font-weight:500">Richiesta Informazioni</a>
           </div>
         </div>

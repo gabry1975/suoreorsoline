@@ -63,9 +63,10 @@ Non cambiare gli slug delle pagine dalla bacheca. Al go-live: `blog_public=1` e 
 - [ ] Cookie e privacy con **iubenda** (al posto del banner provvisorio); collegare l'informativa al form Contatti e al footer.
   La mappa Google in Contatti va bloccata finché non c'è il consenso (blocco preventivo di iubenda).
 - [ ] Sostituire i segnaposto "IMMAGINE · …" con le foto (da Elementor).
-- [ ] Testi delle pagine Cappella e Sale Meeting da riportare dal sito online.
+- [x] Testi del sito online riportati in tutte le pagine (verifica frase per frase del 2026-11-18).
 - [ ] Testi e immagini delle nuove pagine Foresteria (`/foresteria/`) ed Eventi (`/eventi/`), aggiunte il 2026-11-18.
-- [ ] Tempi di percorrenza ("xx min") e recensioni reali in Home.
+- [ ] Recensioni reali in Home (oggi testi di esempio). Tempi di percorrenza: stime, da verificare con Google Maps.
+- [ ] Al go-live: sostituire nel database l'indirizzo dello stage con il dominio definitivo (link al PDF del Regolamento e altri URL assoluti).
 - [ ] Destinatario definitivo delle email del form Contatti.
 - [ ] Link Utili (Contatti): link e recapiti delle case per ferie di Cortina e Roma (oggi solo testo; in Elementor basta aggiungere l'URL al bottone).
 - [ ] Passaggio a Elementor Pro (header/footer con Theme Builder, form Elementor) quando c'è la licenza.

@@ -18,6 +18,22 @@
    sfondo bordeaux più rosato (richiesta del 2026-11-18). Al passaggio del mouse restano #C18A8A (style.css). */
 .hv-wine:not(.elementor-widget),.elementor .e-con.hv-wine,.elementor .hv-wine .elementor-button{background:#b04a5a!important}
 
+/* Slider (Home, "Dicono di noi"): contenitore con classe o-slider, schede con classe o-slide.
+   3 schede visibili su desktop, una (e un pezzo della successiva) su mobile; comandi creati da main.js. */
+.elementor .e-con.o-slider{display:flex!important;grid-template-columns:none!important;gap:16px!important;overflow-x:auto!important;
+  scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior-x:contain}
+.elementor .e-con.o-slider::-webkit-scrollbar{display:none}
+.elementor .e-con.o-slider > .o-slide{flex:0 0 calc((100% - 32px) / 3)!important;scroll-snap-align:start}
+@media (max-width:900px){.elementor .e-con.o-slider > .o-slide{flex-basis:86%!important}}
+.o-slider-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:28px}
+.o-slider-nav button{width:44px;height:44px;border-radius:50%;border:1px solid #b04a5a;background:#fff;color:#b04a5a;display:grid;place-items:center;cursor:pointer;font:600 18px/1 'Funnel Sans',sans-serif;padding:0;transition:background .2s ease,color .2s ease}
+.o-slider-nav button:hover{background:#b04a5a;color:#fff}
+.o-slider-nav button:focus-visible{outline:2px solid #b04a5a;outline-offset:2px}
+.o-slider-dots{display:flex;gap:8px}
+.o-slider-dots button{width:10px;height:10px;border:0;border-radius:50%;background:#e6c7c9;padding:0}
+.o-slider-dots button.is-on{background:#b04a5a;width:26px;border-radius:5px}
+.o-slider-dots button:hover{background:#c18a8a}
+
 /* Ancora #regolamento (Home): lascia spazio all'header fisso quando ci si arriva dal menu. */
 #regolamento{scroll-margin-top:110px}
 

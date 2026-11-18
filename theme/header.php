@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 $sec = orsoline_current_section();
 $nb = function ($k) use ($sec) { return $sec === $k ? '#fcecef' : 'transparent'; };
-$nf = function ($k) use ($sec) { return $sec === $k ? '#a0244a' : '#2a1a22'; };
+$nf = function ($k) use ($sec) { return $sec === $k ? '#b04a5a' : '#2a1a22'; };
 $logo = get_template_directory_uri() . '/assets/img/logo.png';
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -38,7 +38,7 @@ $logo = get_template_directory_uri() . '/assets/img/logo.png';
         </div>
       </div>
       <a class="lk hv-sky" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;padding:10px clamp(10px,1.2vw,18px);white-space:nowrap;border-radius:999px;background:<?php echo $nb('contatti'); ?>;color:<?php echo $nf('contatti'); ?>">Contatti</a>
-      <a class="lk hv-wine nav-cta" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;margin-left:10px;white-space:nowrap;background:#a0244a;color:#fff;padding:15px clamp(14px,1.6vw,24px);border-radius:999px;font-weight:600;display:flex;gap:10px;align-items:center">Richiesta Informazioni <span style="width:22px;height:22px;border-radius:50%;background:#fff;color:#a0244a;display:grid;place-items:center;font-size:12px">→</span></a>
+      <a class="lk hv-wine nav-cta" href="<?php echo esc_url(orsoline_url('contatti')); ?>" style="cursor:pointer;margin-left:10px;white-space:nowrap;background:#b04a5a;color:#fff;padding:15px clamp(14px,1.6vw,24px);border-radius:999px;font-weight:600;display:flex;gap:10px;align-items:center">Richiesta Informazioni <span style="width:22px;height:22px;border-radius:50%;background:#fff;color:#b04a5a;display:grid;place-items:center;font-size:12px">→</span></a>
     </nav>
   </div>
 </header>

@@ -58,7 +58,7 @@
 }
 
 /* Galleria foto nelle pagine (widget "Galleria immagini" con classe o-galleria): griglia a 3 colonne, angoli arrotondati. */
-.elementor .o-galleria{margin:24px 0 40px!important}
+.elementor .elementor-widget.o-galleria{margin:0!important;padding:24px 0 40px!important}
 .elementor .o-galleria .gallery{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .elementor .o-galleria .gallery-item{width:auto!important;max-width:none!important;margin:0!important;padding:0!important}
 .elementor .o-galleria .gallery-icon,.elementor .o-galleria .gallery-icon a{display:block}

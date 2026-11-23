@@ -30,10 +30,10 @@ get_header();
         <div style="background:#fff;border:1px solid #efe3e5;border-radius:24px;padding:32px 36px">
           <h2 style="font-family:'Funnel Display',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em;margin:0 0 14px">Link Utili</h2>
           <div style="display:flex;flex-direction:column">
-            <a href="http://www.omscgen.it/" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Suore Orsoline Missionarie del Sacro Cuore<span style="color:#b04a5a">↗</span></a>
-            <a href="http://chiesadimilano.it" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Diocesi di Milano<span style="color:#b04a5a">↗</span></a>
-            <a href="http://www.radiovaticana.org" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">Radio Vaticana<span style="color:#b04a5a">↗</span></a>
-            <a href="http://www.news.va" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e9eb;color:#2a1a22">La Santa Sede<span style="color:#b04a5a">↗</span></a>
+            <a href="http://www.omscgen.it/" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e7ea;color:#2a1a22">Suore Orsoline Missionarie del Sacro Cuore<span style="color:#b04a5a">↗</span></a>
+            <a href="http://chiesadimilano.it" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e7ea;color:#2a1a22">Diocesi di Milano<span style="color:#b04a5a">↗</span></a>
+            <a href="http://www.radiovaticana.org" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e7ea;color:#2a1a22">Radio Vaticana<span style="color:#b04a5a">↗</span></a>
+            <a href="http://www.news.va" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f3e7ea;color:#2a1a22">La Santa Sede<span style="color:#b04a5a">↗</span></a>
             <a href="http://www.vatican.va" target="_blank" style="display:flex;justify-content:space-between;padding:12px 0;color:#2a1a22">Sito Vaticano<span style="color:#b04a5a">↗</span></a>
           </div>
         </div>

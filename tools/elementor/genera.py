@@ -43,7 +43,7 @@ INLINE_TAGS = {'span', 'a', 'label', 'strong', 'em', 'b', 'i', 'small'}
 
 # Classi leggibili per gli stili in linea più comuni dentro i testi.
 NAMED_INLINE = {
-    'font-weight:300;color:#a0244a': 'o-accent',
+    'font-weight:300;color:#b04a5a': 'o-accent',
     'font-weight:300;color:#f2d4d3': 'o-accent-chiaro',
 }
 

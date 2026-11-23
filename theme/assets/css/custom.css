@@ -56,3 +56,12 @@
 @media (min-width:901px){
   .elementor .e-con.o-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}
 }
+
+/* Galleria foto nelle pagine (widget "Galleria immagini" con classe o-galleria): griglia a 3 colonne, angoli arrotondati. */
+.elementor .o-galleria{margin:24px 0 40px!important}
+.elementor .o-galleria .gallery{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.elementor .o-galleria .gallery-item{width:auto!important;max-width:none!important;margin:0!important;padding:0!important}
+.elementor .o-galleria .gallery-icon,.elementor .o-galleria .gallery-icon a{display:block}
+.elementor .o-galleria .gallery-item img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;display:block}
+@media (max-width:900px){.elementor .o-galleria .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media (max-width:480px){.elementor .o-galleria .gallery{grid-template-columns:1fr}}

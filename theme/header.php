@@ -30,7 +30,11 @@ $logo = get_template_directory_uri() . '/assets/img/logo.png';
           <div style="width:640px;background:#ffffff;border:1px solid #efe3e5;border-radius:20px;box-shadow:0 30px 60px -24px rgba(90,20,45,.35);padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:6px">
             <?php foreach (orsoline_spazi() as $s) : ?>
             <a class="lk hv-pink" href="<?php echo esc_url(orsoline_url($s['slug'])); ?>" style="cursor:pointer;display:flex;align-items:center;gap:14px;padding:10px;border-radius:18px">
-              <div style="width:52px;height:52px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#f3e7ea 0 8px,#ebdde1 8px 16px)"></div>
+              <?php /* Miniatura: assets/img/menu/<slug>.jpg se esiste, altrimenti riquadro rosa a righe. */
+              $thumb = file_exists(get_template_directory() . '/assets/img/menu/' . $s['slug'] . '.jpg')
+                  ? 'url(' . esc_url(get_template_directory_uri() . '/assets/img/menu/' . $s['slug'] . '.jpg') . ') center/cover'
+                  : 'repeating-linear-gradient(135deg,#f3e7ea 0 8px,#ebdde1 8px 16px)'; ?>
+              <div style="width:52px;height:52px;border-radius:14px;flex:none;background:<?php echo $thumb; ?>"></div>
               <div style="font-weight:600;font-size:16px;line-height:1.25"><?php echo esc_html($s['title']); ?></div>
             </a>
             <?php endforeach; ?>
